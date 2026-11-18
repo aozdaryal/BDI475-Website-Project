@@ -1,31 +1,98 @@
 <!DOCTYPE html>
-<!-- A placeholder from the Home Sales template. Replace this file with your site's first page. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under construction</title>
-  <!-- An empty icon, so the browser doesn't log an error looking for favicon.ico -->
+  <title>College-Town Home Sales Explorer</title>
+  <meta name="description" content="Home prices, price per square foot, days on market and distance to campus for 35,371 home sales around 11 university campuses, 2023 to 2026.">
   <link rel="icon" href="data:,">
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-      font-family: system-ui, sans-serif;
-      line-height: 1.5;
-    }
-    footer { margin-top: 3rem; font-size: 0.875rem; opacity: 0.75; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <main>
-    <h1>This site is under construction</h1>
-    <p>It will show findings from the College-town home sales dataset.</p>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="eyebrow">College-town home sales &middot; <span id="date-range">2023 to 2026</span></p>
+      <h1>What a home near campus costs</h1>
+      <p class="lede">Explore <span id="lede-sales">35,000+</span> home sales around 11 university campuses. Pick a campus or a city to see what homes sold for, what a square foot costs, how fast homes went under contract, and how prices change with distance from campus.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Choose an area">
+      <label for="scope">Showing</label>
+      <select id="scope"></select>
+      <span id="scope-detail" class="muted"></span>
+    </section>
+
+    <section class="headline" aria-live="polite">
+      <div class="hero">
+        <p class="tile-label">Median sale price</p>
+        <p class="hero-value" id="hero-value">&nbsp;</p>
+        <p class="tile-sub" id="hero-sub">&nbsp;</p>
+      </div>
+      <div class="tiles" id="tiles"></div>
+    </section>
+
+    <section class="charts">
+      <article class="card">
+        <h2>Price per square foot by distance to campus</h2>
+        <p class="card-sub">Median sale price per square foot of living area, by straight-line miles to campus.</p>
+        <div class="chart-box"><canvas id="chart-distance" role="img" aria-label="Bar chart of median price per square foot by distance to campus"></canvas></div>
+        <p class="card-note" id="note-distance"></p>
+        <details><summary>Data table</summary><div id="table-distance"></div></details>
+      </article>
+
+      <article class="card">
+        <h2>Median sale price by quarter</h2>
+        <p class="card-sub">Median price of sales closed in each quarter.</p>
+        <div class="chart-box"><canvas id="chart-quarters" role="img" aria-label="Line chart of median sale price by quarter"></canvas></div>
+        <p class="card-note" id="note-quarters"></p>
+        <details><summary>Data table</summary><div id="table-quarters"></div></details>
+      </article>
+
+      <article class="card">
+        <h2>How sale prices are spread</h2>
+        <p class="card-sub">Number of sales in each $50,000 price range.</p>
+        <div class="chart-box"><canvas id="chart-histogram" role="img" aria-label="Histogram of sale prices"></canvas></div>
+        <p class="card-note">The last bar holds every sale of $1.5 million or more.</p>
+        <details><summary>Data table</summary><div id="table-histogram"></div></details>
+      </article>
+
+      <article class="card">
+        <h2>When homes sell</h2>
+        <p class="card-sub">Average number of sales closed in each calendar month.</p>
+        <div class="chart-box"><canvas id="chart-months" role="img" aria-label="Bar chart of average sales per calendar month"></canvas></div>
+        <p class="card-note" id="note-months"></p>
+        <details><summary>Data table</summary><div id="table-months"></div></details>
+      </article>
+    </section>
+
+    <section class="card compare">
+      <div class="compare-head">
+        <div>
+          <h2>Compare every market</h2>
+          <p class="card-sub">Click a column to sort it. Click a row to show it above.</p>
+        </div>
+        <div class="toggle" role="group" aria-label="Compare by">
+          <button type="button" data-level="campus" aria-pressed="true">Campuses</button>
+          <button type="button" data-level="city" aria-pressed="false">Cities</button>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="compare-table"></table></div>
+    </section>
+
+    <section class="card notes" id="data-notes">
+      <h2>How the numbers are made</h2>
+      <ul id="notes-list"></ul>
+    </section>
   </main>
-  <footer>
+
+  <footer class="wrap footer">
     <p>Data: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p>
+    <p>Every figure on this page is computed from <code>data/college_town_home_sales.csv</code> by <code>scripts/build_summary.py</code>. Charts drawn with Chart.js. <a href="https://github.com/aozdaryal/BDI475-Website-Project">Code on GitHub</a>.</p>
   </footer>
+
+  <script src="assets/vendor/chart.umd.min.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
