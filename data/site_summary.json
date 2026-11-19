@@ -1,0 +1,10700 @@
+{
+ "source": "data/college_town_home_sales.csv",
+ "counts": {
+  "rows": 35442,
+  "kept": 35371,
+  "below_min": 40,
+  "above_max": 31,
+  "zero_price": 1,
+  "max_price": 81510000,
+  "campuses": 11,
+  "cities": 18,
+  "states": 11,
+  "sqft_below_min": 130,
+  "sqft_missing": 376
+ },
+ "rules": {
+  "price_min": 10000,
+  "price_max": 5000000,
+  "sqft_min": 300,
+  "first_sale": "2023-03-27",
+  "last_sale": "2026-03-25",
+  "last_12": [
+   "2025-03-26",
+   "2026-03-25"
+  ],
+  "prior_12": [
+   "2024-03-26",
+   "2025-03-25"
+  ],
+  "month_window": [
+   "2023-04-01",
+   "2026-02-28"
+  ],
+  "min_band_sales": 20,
+  "min_quarter_sales": 10,
+  "min_window_sales": 30
+ },
+ "scopes": [
+  {
+   "id": "all",
+   "kind": "all",
+   "name": "All 11 campuses",
+   "campus": null,
+   "rows": 35442,
+   "sales": 35371,
+   "excluded_by_price": 71,
+   "median_price": 410000.0,
+   "p25_price": 295000.0,
+   "p75_price": 600000.0,
+   "mean_price": 500972.19,
+   "median_ppsf": 211.92,
+   "ppsf_sales": 34868,
+   "median_dom": 11.0,
+   "dom_sales": 28028,
+   "no_list_date_share": 0.1731,
+   "price_change_12m": 0.0216,
+   "median_sqft": 1922.0,
+   "median_year_built": 1983.0,
+   "median_beds": 3.0,
+   "median_miles": 3.4,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 125
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 453
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 935
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 1748
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 2568
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 3267
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 3670
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 3909
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 3576
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 2579
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 1945
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 1647
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 1378
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 1104
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 953
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 889
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 646
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 622
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 477
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 433
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 225
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 229
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 238
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 208
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 216
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 149
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 131
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 113
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 115
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 79
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 744
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 1484,
+     "median_price": 479000.0,
+     "median_ppsf": 281.01
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 5342,
+     "median_price": 427500.0,
+     "median_ppsf": 238.33
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 7536,
+     "median_price": 380000.0,
+     "median_ppsf": 200.73
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 11209,
+     "median_price": 375000.0,
+     "median_ppsf": 201.94
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 8617,
+     "median_price": 436000.0,
+     "median_ppsf": 216.74
+    },
+    {
+     "label": "8+ mi",
+     "sales": 1183,
+     "median_price": 540000.0,
+     "median_ppsf": 218.52
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 3787,
+     "median_price": 410000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 3114,
+     "median_price": 395000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 2458,
+     "median_price": 379900.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 2125,
+     "median_price": 395000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 3632,
+     "median_price": 424900.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 3240,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 2635,
+     "median_price": 400000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 2152,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 3967,
+     "median_price": 435000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 3319,
+     "median_price": 422000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 2840,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 1872,
+     "median_price": 405000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 1802,
+     "years": 3,
+     "avg_sales": 600.7
+    },
+    {
+     "month": 2,
+     "sales": 1974,
+     "years": 3,
+     "avg_sales": 658.0
+    },
+    {
+     "month": 3,
+     "sales": 1749,
+     "years": 2,
+     "avg_sales": 874.5
+    },
+    {
+     "month": 4,
+     "sales": 3194,
+     "years": 3,
+     "avg_sales": 1064.7
+    },
+    {
+     "month": 5,
+     "sales": 4035,
+     "years": 3,
+     "avg_sales": 1345.0
+    },
+    {
+     "month": 6,
+     "sales": 4157,
+     "years": 3,
+     "avg_sales": 1385.7
+    },
+    {
+     "month": 7,
+     "sales": 3662,
+     "years": 3,
+     "avg_sales": 1220.7
+    },
+    {
+     "month": 8,
+     "sales": 3381,
+     "years": 3,
+     "avg_sales": 1127.0
+    },
+    {
+     "month": 9,
+     "sales": 2630,
+     "years": 3,
+     "avg_sales": 876.7
+    },
+    {
+     "month": 10,
+     "sales": 2900,
+     "years": 3,
+     "avg_sales": 966.7
+    },
+    {
+     "month": 11,
+     "sales": 2387,
+     "years": 3,
+     "avg_sales": 795.7
+    },
+    {
+     "month": 12,
+     "sales": 2646,
+     "years": 3,
+     "avg_sales": 882.0
+    }
+   ]
+  },
+  {
+   "id": "u:Purdue University",
+   "kind": "campus",
+   "name": "Purdue University",
+   "campus": "Purdue University",
+   "places": [
+    "Lafayette, IN",
+    "West Lafayette, IN"
+   ],
+   "rows": 4616,
+   "sales": 4612,
+   "excluded_by_price": 4,
+   "median_price": 299900.0,
+   "p25_price": 225875.0,
+   "p75_price": 395000.0,
+   "mean_price": 328285.98,
+   "median_ppsf": 168.39,
+   "ppsf_sales": 4611,
+   "median_dom": 10.0,
+   "dom_sales": 3896,
+   "no_list_date_share": 0.0614,
+   "price_change_12m": 0.0098,
+   "median_sqft": 1824.0,
+   "median_year_built": 1992.0,
+   "median_beds": 3.0,
+   "median_miles": 3.8,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 10
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 47
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 168
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 535
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 715
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 839
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 697
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 491
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 386
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 222
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 147
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 94
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 73
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 63
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 39
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 27
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 15
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 9
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 8
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 4
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 4
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 3
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 6
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 0
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 1
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 2
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 3
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 2
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 1
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 1
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 102,
+     "median_price": 405500.0,
+     "median_ppsf": 192.34
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 340,
+     "median_price": 286500.0,
+     "median_ppsf": 156.25
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 1008,
+     "median_price": 233000.0,
+     "median_ppsf": 161.02
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1703,
+     "median_price": 277000.0,
+     "median_ppsf": 171.53
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 1287,
+     "median_price": 332000.0,
+     "median_ppsf": 168.84
+    },
+    {
+     "label": "8+ mi",
+     "sales": 172,
+     "median_price": 434950.0,
+     "median_ppsf": 175.96
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 428,
+     "median_price": 285950.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 408,
+     "median_price": 277500.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 321,
+     "median_price": 267000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 270,
+     "median_price": 280000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 445,
+     "median_price": 303050.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 424,
+     "median_price": 310000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 381,
+     "median_price": 305000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 274,
+     "median_price": 303500.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 507,
+     "median_price": 320000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 479,
+     "median_price": 305000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 375,
+     "median_price": 290000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 278,
+     "median_price": 302000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 232,
+     "years": 3,
+     "avg_sales": 77.3
+    },
+    {
+     "month": 2,
+     "sales": 271,
+     "years": 3,
+     "avg_sales": 90.3
+    },
+    {
+     "month": 3,
+     "sales": 223,
+     "years": 2,
+     "avg_sales": 111.5
+    },
+    {
+     "month": 4,
+     "sales": 399,
+     "years": 3,
+     "avg_sales": 133.0
+    },
+    {
+     "month": 5,
+     "sales": 497,
+     "years": 3,
+     "avg_sales": 165.7
+    },
+    {
+     "month": 6,
+     "sales": 484,
+     "years": 3,
+     "avg_sales": 161.3
+    },
+    {
+     "month": 7,
+     "sales": 466,
+     "years": 3,
+     "avg_sales": 155.3
+    },
+    {
+     "month": 8,
+     "sales": 460,
+     "years": 3,
+     "avg_sales": 153.3
+    },
+    {
+     "month": 9,
+     "sales": 385,
+     "years": 3,
+     "avg_sales": 128.3
+    },
+    {
+     "month": 10,
+     "sales": 390,
+     "years": 3,
+     "avg_sales": 130.0
+    },
+    {
+     "month": 11,
+     "sales": 340,
+     "years": 3,
+     "avg_sales": 113.3
+    },
+    {
+     "month": 12,
+     "sales": 347,
+     "years": 3,
+     "avg_sales": 115.7
+    }
+   ]
+  },
+  {
+   "id": "u:The Pennsylvania State University",
+   "kind": "campus",
+   "name": "The Pennsylvania State University",
+   "campus": "The Pennsylvania State University",
+   "places": [
+    "State College, PA"
+   ],
+   "rows": 1351,
+   "sales": 1348,
+   "excluded_by_price": 3,
+   "median_price": 430000.0,
+   "p25_price": 350000.0,
+   "p75_price": 557125.0,
+   "mean_price": 474550.16,
+   "median_ppsf": 208.02,
+   "ppsf_sales": 1343,
+   "median_dom": 8.0,
+   "dom_sales": 908,
+   "no_list_date_share": 0.3168,
+   "price_change_12m": 0.0542,
+   "median_sqft": 2124.0,
+   "median_year_built": 1982.0,
+   "median_beds": 3.0,
+   "median_miles": 2.1,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 2
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 3
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 6
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 25
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 65
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 100
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 135
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 225
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 174
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 139
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 107
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 101
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 65
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 39
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 35
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 37
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 21
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 23
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 11
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 7
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 7
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 3
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 4
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 4
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 0
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 1
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 3
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 219,
+     "median_price": 430000.0,
+     "median_ppsf": 268.06
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 363,
+     "median_price": 422000.0,
+     "median_ppsf": 204.39
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 547,
+     "median_price": 450000.0,
+     "median_ppsf": 200.62
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 219,
+     "median_price": 390000.0,
+     "median_ppsf": 199.03
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 152,
+     "median_price": 426500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 137,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 88,
+     "median_price": 385000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 78,
+     "median_price": 427500.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 139,
+     "median_price": 439000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 120,
+     "median_price": 424000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 95,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 67,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 164,
+     "median_price": 451500.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 124,
+     "median_price": 470000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 104,
+     "median_price": 414000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 66,
+     "median_price": 485000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 69,
+     "years": 3,
+     "avg_sales": 23.0
+    },
+    {
+     "month": 2,
+     "sales": 60,
+     "years": 3,
+     "avg_sales": 20.0
+    },
+    {
+     "month": 3,
+     "sales": 61,
+     "years": 2,
+     "avg_sales": 30.5
+    },
+    {
+     "month": 4,
+     "sales": 125,
+     "years": 3,
+     "avg_sales": 41.7
+    },
+    {
+     "month": 5,
+     "sales": 158,
+     "years": 3,
+     "avg_sales": 52.7
+    },
+    {
+     "month": 6,
+     "sales": 172,
+     "years": 3,
+     "avg_sales": 57.3
+    },
+    {
+     "month": 7,
+     "sales": 158,
+     "years": 3,
+     "avg_sales": 52.7
+    },
+    {
+     "month": 8,
+     "sales": 131,
+     "years": 3,
+     "avg_sales": 43.7
+    },
+    {
+     "month": 9,
+     "sales": 92,
+     "years": 3,
+     "avg_sales": 30.7
+    },
+    {
+     "month": 10,
+     "sales": 114,
+     "years": 3,
+     "avg_sales": 38.0
+    },
+    {
+     "month": 11,
+     "sales": 86,
+     "years": 3,
+     "avg_sales": 28.7
+    },
+    {
+     "month": 12,
+     "sales": 87,
+     "years": 3,
+     "avg_sales": 29.0
+    }
+   ]
+  },
+  {
+   "id": "u:The University of Iowa",
+   "kind": "campus",
+   "name": "The University of Iowa",
+   "campus": "The University of Iowa",
+   "places": [
+    "Iowa City, IA"
+   ],
+   "rows": 1909,
+   "sales": 1909,
+   "excluded_by_price": 0,
+   "median_price": 342000.0,
+   "p25_price": 257500.0,
+   "p75_price": 460000.0,
+   "mean_price": 389733.99,
+   "median_ppsf": 175.91,
+   "ppsf_sales": 1907,
+   "median_dom": 23.5,
+   "dom_sales": 1248,
+   "no_list_date_share": 0.0943,
+   "price_change_12m": 0.0086,
+   "median_sqft": 2034.0,
+   "median_year_built": 1976.0,
+   "median_beds": 4.0,
+   "median_miles": 2.2,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 10
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 40
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 113
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 263
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 292
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 264
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 215
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 175
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 150
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 78
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 80
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 61
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 36
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 29
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 24
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 17
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 15
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 12
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 2
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 2
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 4
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 4
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 3
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 1
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 1
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 3
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 7
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 171,
+     "median_price": 335000.0,
+     "median_ppsf": 205.59
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 635,
+     "median_price": 310000.0,
+     "median_ppsf": 175.98
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 658,
+     "median_price": 300000.0,
+     "median_ppsf": 162.29
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 415,
+     "median_price": 479900.0,
+     "median_ppsf": 186.03
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 19,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 11,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 223,
+     "median_price": 325000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 165,
+     "median_price": 339000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 123,
+     "median_price": 295000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 89,
+     "median_price": 315000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 209,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 177,
+     "median_price": 365000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 115,
+     "median_price": 325000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 100,
+     "median_price": 343600.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 257,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 198,
+     "median_price": 356250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 151,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 94,
+     "median_price": 321695.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 97,
+     "years": 3,
+     "avg_sales": 32.3
+    },
+    {
+     "month": 2,
+     "sales": 87,
+     "years": 3,
+     "avg_sales": 29.0
+    },
+    {
+     "month": 3,
+     "sales": 68,
+     "years": 2,
+     "avg_sales": 34.0
+    },
+    {
+     "month": 4,
+     "sales": 159,
+     "years": 3,
+     "avg_sales": 53.0
+    },
+    {
+     "month": 5,
+     "sales": 237,
+     "years": 3,
+     "avg_sales": 79.0
+    },
+    {
+     "month": 6,
+     "sales": 293,
+     "years": 3,
+     "avg_sales": 97.7
+    },
+    {
+     "month": 7,
+     "sales": 233,
+     "years": 3,
+     "avg_sales": 77.7
+    },
+    {
+     "month": 8,
+     "sales": 190,
+     "years": 3,
+     "avg_sales": 63.3
+    },
+    {
+     "month": 9,
+     "sales": 117,
+     "years": 3,
+     "avg_sales": 39.0
+    },
+    {
+     "month": 10,
+     "sales": 144,
+     "years": 3,
+     "avg_sales": 48.0
+    },
+    {
+     "month": 11,
+     "sales": 129,
+     "years": 3,
+     "avg_sales": 43.0
+    },
+    {
+     "month": 12,
+     "sales": 116,
+     "years": 3,
+     "avg_sales": 38.7
+    }
+   ]
+  },
+  {
+   "id": "u:The University of North Carolina at Chapel Hill",
+   "kind": "campus",
+   "name": "The University of North Carolina at Chapel Hill",
+   "campus": "The University of North Carolina at Chapel Hill",
+   "places": [
+    "Carrboro, NC",
+    "Chapel Hill, NC",
+    "Pittsboro, NC"
+   ],
+   "rows": 3016,
+   "sales": 3002,
+   "excluded_by_price": 14,
+   "median_price": 725000.0,
+   "p25_price": 545250.0,
+   "p75_price": 968959.75,
+   "mean_price": 814005.2,
+   "median_ppsf": 280.21,
+   "ppsf_sales": 2991,
+   "median_dom": 10.0,
+   "dom_sales": 2408,
+   "no_list_date_share": 0.1925,
+   "price_change_12m": -0.0405,
+   "median_sqft": 2613.0,
+   "median_year_built": 1997.0,
+   "median_beds": 4.0,
+   "median_miles": 3.8,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 3
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 9
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 9
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 20
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 33
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 45
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 51
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 90
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 143
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 173
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 182
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 203
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 230
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 218
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 184
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 193
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 157
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 137
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 120
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 123
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 70
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 58
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 67
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 57
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 63
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 47
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 40
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 25
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 35
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 24
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 193
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 123,
+     "median_price": 950000.0,
+     "median_ppsf": 398.53
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 419,
+     "median_price": 750000.0,
+     "median_ppsf": 311.32
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 543,
+     "median_price": 700000.0,
+     "median_ppsf": 312.91
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 867,
+     "median_price": 735000.0,
+     "median_ppsf": 271.04
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 819,
+     "median_price": 665000.0,
+     "median_ppsf": 264.65
+    },
+    {
+     "label": "8+ mi",
+     "sales": 231,
+     "median_price": 822500.0,
+     "median_ppsf": 244.04
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 360,
+     "median_price": 725000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 248,
+     "median_price": 705000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 189,
+     "median_price": 683000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 197,
+     "median_price": 745000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 314,
+     "median_price": 757250.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 246,
+     "median_price": 750000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 208,
+     "median_price": 735000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 196,
+     "median_price": 705750.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 340,
+     "median_price": 752000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 267,
+     "median_price": 705000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 257,
+     "median_price": 662700.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 152,
+     "median_price": 682500.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 160,
+     "years": 3,
+     "avg_sales": 53.3
+    },
+    {
+     "month": 2,
+     "sales": 159,
+     "years": 3,
+     "avg_sales": 53.0
+    },
+    {
+     "month": 3,
+     "sales": 182,
+     "years": 2,
+     "avg_sales": 91.0
+    },
+    {
+     "month": 4,
+     "sales": 275,
+     "years": 3,
+     "avg_sales": 91.7
+    },
+    {
+     "month": 5,
+     "sales": 375,
+     "years": 3,
+     "avg_sales": 125.0
+    },
+    {
+     "month": 6,
+     "sales": 364,
+     "years": 3,
+     "avg_sales": 121.3
+    },
+    {
+     "month": 7,
+     "sales": 283,
+     "years": 3,
+     "avg_sales": 94.3
+    },
+    {
+     "month": 8,
+     "sales": 252,
+     "years": 3,
+     "avg_sales": 84.0
+    },
+    {
+     "month": 9,
+     "sales": 226,
+     "years": 3,
+     "avg_sales": 75.3
+    },
+    {
+     "month": 10,
+     "sales": 253,
+     "years": 3,
+     "avg_sales": 84.3
+    },
+    {
+     "month": 11,
+     "sales": 206,
+     "years": 3,
+     "avg_sales": 68.7
+    },
+    {
+     "month": 12,
+     "sales": 195,
+     "years": 3,
+     "avg_sales": 65.0
+    }
+   ]
+  },
+  {
+   "id": "u:University of California, Davis",
+   "kind": "campus",
+   "name": "University of California, Davis",
+   "campus": "University of California, Davis",
+   "places": [
+    "Davis, CA"
+   ],
+   "rows": 941,
+   "sales": 941,
+   "excluded_by_price": 0,
+   "median_price": 889000.0,
+   "p25_price": 745000.0,
+   "p75_price": 1150000.0,
+   "mean_price": 976896.14,
+   "median_ppsf": 492.71,
+   "ppsf_sales": 941,
+   "median_dom": 11.0,
+   "dom_sales": 792,
+   "no_list_date_share": 0.153,
+   "price_change_12m": -0.0317,
+   "median_sqft": 1842.0,
+   "median_year_built": 1978.0,
+   "median_beds": 3.0,
+   "median_miles": 2.0,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 1
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 0
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 2
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 2
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 4
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 4
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 7
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 8
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 16
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 22
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 49
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 54
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 72
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 90
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 74
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 79
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 58
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 63
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 34
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 35
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 26
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 28
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 38
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 20
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 26
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 13
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 21
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 12
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 83
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 76,
+     "median_price": 925000.0,
+     "median_ppsf": 524.89
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 358,
+     "median_price": 841000.0,
+     "median_ppsf": 497.78
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 441,
+     "median_price": 899000.0,
+     "median_ppsf": 489.27
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 58,
+     "median_price": 1260000.0,
+     "median_ppsf": 461.19
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 8,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 110,
+     "median_price": 950000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 81,
+     "median_price": 861000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 56,
+     "median_price": 800000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 62,
+     "median_price": 895000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 97,
+     "median_price": 965000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 86,
+     "median_price": 1000000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 50,
+     "median_price": 782000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 61,
+     "median_price": 925000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 121,
+     "median_price": 902000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 92,
+     "median_price": 879250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 73,
+     "median_price": 815000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 44,
+     "median_price": 798000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 43,
+     "years": 3,
+     "avg_sales": 14.3
+    },
+    {
+     "month": 2,
+     "sales": 55,
+     "years": 3,
+     "avg_sales": 18.3
+    },
+    {
+     "month": 3,
+     "sales": 53,
+     "years": 2,
+     "avg_sales": 26.5
+    },
+    {
+     "month": 4,
+     "sales": 99,
+     "years": 3,
+     "avg_sales": 33.0
+    },
+    {
+     "month": 5,
+     "sales": 121,
+     "years": 3,
+     "avg_sales": 40.3
+    },
+    {
+     "month": 6,
+     "sales": 108,
+     "years": 3,
+     "avg_sales": 36.0
+    },
+    {
+     "month": 7,
+     "sales": 96,
+     "years": 3,
+     "avg_sales": 32.0
+    },
+    {
+     "month": 8,
+     "sales": 89,
+     "years": 3,
+     "avg_sales": 29.7
+    },
+    {
+     "month": 9,
+     "sales": 74,
+     "years": 3,
+     "avg_sales": 24.7
+    },
+    {
+     "month": 10,
+     "sales": 79,
+     "years": 3,
+     "avg_sales": 26.3
+    },
+    {
+     "month": 11,
+     "sales": 53,
+     "years": 3,
+     "avg_sales": 17.7
+    },
+    {
+     "month": 12,
+     "sales": 47,
+     "years": 3,
+     "avg_sales": 15.7
+    }
+   ]
+  },
+  {
+   "id": "u:University of Florida",
+   "kind": "campus",
+   "name": "University of Florida",
+   "campus": "University of Florida",
+   "places": [
+    "Gainesville, FL",
+    "Newberry, FL"
+   ],
+   "rows": 5629,
+   "sales": 5619,
+   "excluded_by_price": 10,
+   "median_price": 355000.0,
+   "p25_price": 261500.0,
+   "p75_price": 450000.0,
+   "mean_price": 397478.1,
+   "median_ppsf": 203.32,
+   "ppsf_sales": 5613,
+   "median_dom": 25.0,
+   "dom_sales": 4505,
+   "no_list_date_share": 0.1847,
+   "price_change_12m": -0.0042,
+   "median_sqft": 1757.0,
+   "median_year_built": 1988.0,
+   "median_beds": 3.0,
+   "median_miles": 4.4,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 57
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 111
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 181
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 309
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 562
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 784
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 706
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 769
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 695
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 378
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 238
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 171
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 121
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 96
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 71
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 80
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 36
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 49
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 29
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 28
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 13
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 9
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 15
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 13
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 16
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 11
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 4
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 11
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 6
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 5
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 45
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 135,
+     "median_price": 408500.0,
+     "median_ppsf": 242.75
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 473,
+     "median_price": 355000.0,
+     "median_ppsf": 212.9
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 951,
+     "median_price": 261000.0,
+     "median_ppsf": 187.15
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1757,
+     "median_price": 310000.0,
+     "median_ppsf": 193.01
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 2006,
+     "median_price": 410000.0,
+     "median_ppsf": 214.55
+    },
+    {
+     "label": "8+ mi",
+     "sales": 297,
+     "median_price": 436990.0,
+     "median_ppsf": 203.86
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 602,
+     "median_price": 370308.5
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 439,
+     "median_price": 354000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 398,
+     "median_price": 328750.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 378,
+     "median_price": 369999.5
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 614,
+     "median_price": 364950.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 463,
+     "median_price": 352500.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 407,
+     "median_price": 345000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 385,
+     "median_price": 360000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 642,
+     "median_price": 366000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 480,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 443,
+     "median_price": 356500.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 321,
+     "median_price": 340000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 321,
+     "years": 3,
+     "avg_sales": 107.0
+    },
+    {
+     "month": 2,
+     "sales": 366,
+     "years": 3,
+     "avg_sales": 122.0
+    },
+    {
+     "month": 3,
+     "sales": 293,
+     "years": 2,
+     "avg_sales": 146.5
+    },
+    {
+     "month": 4,
+     "sales": 559,
+     "years": 3,
+     "avg_sales": 186.3
+    },
+    {
+     "month": 5,
+     "sales": 654,
+     "years": 3,
+     "avg_sales": 218.0
+    },
+    {
+     "month": 6,
+     "sales": 645,
+     "years": 3,
+     "avg_sales": 215.0
+    },
+    {
+     "month": 7,
+     "sales": 537,
+     "years": 3,
+     "avg_sales": 179.0
+    },
+    {
+     "month": 8,
+     "sales": 450,
+     "years": 3,
+     "avg_sales": 150.0
+    },
+    {
+     "month": 9,
+     "sales": 395,
+     "years": 3,
+     "avg_sales": 131.7
+    },
+    {
+     "month": 10,
+     "sales": 418,
+     "years": 3,
+     "avg_sales": 139.3
+    },
+    {
+     "month": 11,
+     "sales": 339,
+     "years": 3,
+     "avg_sales": 113.0
+    },
+    {
+     "month": 12,
+     "sales": 491,
+     "years": 3,
+     "avg_sales": 163.7
+    }
+   ]
+  },
+  {
+   "id": "u:University of Georgia",
+   "kind": "campus",
+   "name": "University of Georgia",
+   "campus": "University of Georgia",
+   "places": [
+    "Athens, GA"
+   ],
+   "rows": 2814,
+   "sales": 2805,
+   "excluded_by_price": 9,
+   "median_price": 370000.0,
+   "p25_price": 300000.0,
+   "p75_price": 495900.0,
+   "mean_price": 455638.72,
+   "median_ppsf": 196.75,
+   "ppsf_sales": 2352,
+   "median_dom": 27.0,
+   "dom_sales": 2278,
+   "no_list_date_share": 0.159,
+   "price_change_12m": -0.0107,
+   "median_sqft": 1902.0,
+   "median_year_built": 1992.0,
+   "median_beds": 3.0,
+   "median_miles": 3.7,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 13
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 21
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 30
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 65
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 169
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 395
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 506
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 451
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 296
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 172
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 120
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 87
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 67
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 74
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 49
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 48
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 30
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 35
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 19
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 19
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 7
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 19
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 12
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 14
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 14
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 6
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 3
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 6
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 6
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 49
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 107,
+     "median_price": 385000.0,
+     "median_ppsf": 269.17
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 453,
+     "median_price": 420000.0,
+     "median_ppsf": 278.19
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 390,
+     "median_price": 389625.0,
+     "median_ppsf": 209.21
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1195,
+     "median_price": 347000.0,
+     "median_ppsf": 188.66
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 596,
+     "median_price": 386585.0,
+     "median_ppsf": 185.89
+    },
+    {
+     "label": "8+ mi",
+     "sales": 64,
+     "median_price": 499900.0,
+     "median_ppsf": 181.78
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 271,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 247,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 186,
+     "median_price": 389352.5
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 221,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 331,
+     "median_price": 379680.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 229,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 209,
+     "median_price": 360000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 198,
+     "median_price": 369450.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 305,
+     "median_price": 385000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 234,
+     "median_price": 366250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 211,
+     "median_price": 359000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 148,
+     "median_price": 356250.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 169,
+     "years": 3,
+     "avg_sales": 56.3
+    },
+    {
+     "month": 2,
+     "sales": 177,
+     "years": 3,
+     "avg_sales": 59.0
+    },
+    {
+     "month": 3,
+     "sales": 168,
+     "years": 2,
+     "avg_sales": 84.0
+    },
+    {
+     "month": 4,
+     "sales": 266,
+     "years": 3,
+     "avg_sales": 88.7
+    },
+    {
+     "month": 5,
+     "sales": 341,
+     "years": 3,
+     "avg_sales": 113.7
+    },
+    {
+     "month": 6,
+     "sales": 300,
+     "years": 3,
+     "avg_sales": 100.0
+    },
+    {
+     "month": 7,
+     "sales": 263,
+     "years": 3,
+     "avg_sales": 87.7
+    },
+    {
+     "month": 8,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 9,
+     "sales": 219,
+     "years": 3,
+     "avg_sales": 73.0
+    },
+    {
+     "month": 10,
+     "sales": 200,
+     "years": 3,
+     "avg_sales": 66.7
+    },
+    {
+     "month": 11,
+     "sales": 167,
+     "years": 3,
+     "avg_sales": 55.7
+    },
+    {
+     "month": 12,
+     "sales": 239,
+     "years": 3,
+     "avg_sales": 79.7
+    }
+   ]
+  },
+  {
+   "id": "u:University of Illinois Urbana-Champaign",
+   "kind": "campus",
+   "name": "University of Illinois Urbana-Champaign",
+   "campus": "University of Illinois Urbana-Champaign",
+   "places": [
+    "Champaign, IL",
+    "Savoy, IL",
+    "Urbana, IL"
+   ],
+   "rows": 3664,
+   "sales": 3663,
+   "excluded_by_price": 1,
+   "median_price": 245000.0,
+   "p25_price": 163500.0,
+   "p75_price": 350000.0,
+   "mean_price": 277489.65,
+   "median_ppsf": 150.3,
+   "ppsf_sales": 3650,
+   "median_dom": 7.0,
+   "dom_sales": 2868,
+   "no_list_date_share": 0.2088,
+   "price_change_12m": 0.0353,
+   "median_sqft": 1660.0,
+   "median_year_built": 1971.0,
+   "median_beds": 3.0,
+   "median_miles": 2.8,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 36
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 231
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 468
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 584
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 569
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 439
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 393
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 314
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 204
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 133
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 88
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 47
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 44
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 31
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 25
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 14
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 11
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 7
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 4
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 5
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 2
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 1
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 5
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 1
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 1
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 3
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 134,
+     "median_price": 316000.0,
+     "median_ppsf": 159.98
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 755,
+     "median_price": 175000.0,
+     "median_ppsf": 136.7
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 1120,
+     "median_price": 215000.0,
+     "median_ppsf": 139.86
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1440,
+     "median_price": 289500.0,
+     "median_ppsf": 158.47
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 206,
+     "median_price": 485000.0,
+     "median_ppsf": 199.34
+    },
+    {
+     "label": "8+ mi",
+     "sales": 8,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 389,
+     "median_price": 228000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 373,
+     "median_price": 230000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 275,
+     "median_price": 220000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 208,
+     "median_price": 205000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 338,
+     "median_price": 250000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 385,
+     "median_price": 265000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 284,
+     "median_price": 235875.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 206,
+     "median_price": 249900.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 356,
+     "median_price": 275000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 351,
+     "median_price": 271000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 266,
+     "median_price": 238750.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 205,
+     "median_price": 235000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 172,
+     "years": 3,
+     "avg_sales": 57.3
+    },
+    {
+     "month": 2,
+     "sales": 220,
+     "years": 3,
+     "avg_sales": 73.3
+    },
+    {
+     "month": 3,
+     "sales": 161,
+     "years": 2,
+     "avg_sales": 80.5
+    },
+    {
+     "month": 4,
+     "sales": 285,
+     "years": 3,
+     "avg_sales": 95.0
+    },
+    {
+     "month": 5,
+     "sales": 364,
+     "years": 3,
+     "avg_sales": 121.3
+    },
+    {
+     "month": 6,
+     "sales": 434,
+     "years": 3,
+     "avg_sales": 144.7
+    },
+    {
+     "month": 7,
+     "sales": 391,
+     "years": 3,
+     "avg_sales": 130.3
+    },
+    {
+     "month": 8,
+     "sales": 431,
+     "years": 3,
+     "avg_sales": 143.7
+    },
+    {
+     "month": 9,
+     "sales": 287,
+     "years": 3,
+     "avg_sales": 95.7
+    },
+    {
+     "month": 10,
+     "sales": 321,
+     "years": 3,
+     "avg_sales": 107.0
+    },
+    {
+     "month": 11,
+     "sales": 234,
+     "years": 3,
+     "avg_sales": 78.0
+    },
+    {
+     "month": 12,
+     "sales": 270,
+     "years": 3,
+     "avg_sales": 90.0
+    }
+   ]
+  },
+  {
+   "id": "u:University of Michigan",
+   "kind": "campus",
+   "name": "University of Michigan",
+   "campus": "University of Michigan",
+   "places": [
+    "Ann Arbor, MI"
+   ],
+   "rows": 3021,
+   "sales": 3007,
+   "excluded_by_price": 14,
+   "median_price": 572000.0,
+   "p25_price": 440000.0,
+   "p75_price": 765000.0,
+   "mean_price": 653387.56,
+   "median_ppsf": 259.22,
+   "ppsf_sales": 2998,
+   "median_dom": 7.0,
+   "dom_sales": 2448,
+   "no_list_date_share": 0.1676,
+   "price_change_12m": 0.0086,
+   "median_sqft": 2221.0,
+   "median_year_built": 1966.0,
+   "median_beds": 4.0,
+   "median_miles": 2.7,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 5
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 12
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 29
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 45
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 74
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 147
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 214
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 259
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 302
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 271
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 270
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 258
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 166
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 160
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 133
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 81
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 80
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 82
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 52
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 35
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 41
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 40
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 40
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 36
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 20
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 16
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 21
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 17
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 11
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 89
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 179,
+     "median_price": 700000.0,
+     "median_ppsf": 427.44
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 794,
+     "median_price": 575000.0,
+     "median_ppsf": 332.21
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 788,
+     "median_price": 505000.0,
+     "median_ppsf": 251.65
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 832,
+     "median_price": 600000.0,
+     "median_ppsf": 226.17
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 402,
+     "median_price": 619310.0,
+     "median_ppsf": 213.39
+    },
+    {
+     "label": "8+ mi",
+     "sales": 12,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 397,
+     "median_price": 571000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 286,
+     "median_price": 552875.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 218,
+     "median_price": 528500.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 151,
+     "median_price": 535000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 263,
+     "median_price": 570000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 278,
+     "median_price": 600000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 215,
+     "median_price": 549000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 175,
+     "median_price": 580000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 341,
+     "median_price": 610000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 308,
+     "median_price": 573500.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 223,
+     "median_price": 580000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 138,
+     "median_price": 564000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 123,
+     "years": 3,
+     "avg_sales": 41.0
+    },
+    {
+     "month": 2,
+     "sales": 146,
+     "years": 3,
+     "avg_sales": 48.7
+    },
+    {
+     "month": 3,
+     "sales": 142,
+     "years": 2,
+     "avg_sales": 71.0
+    },
+    {
+     "month": 4,
+     "sales": 278,
+     "years": 3,
+     "avg_sales": 92.7
+    },
+    {
+     "month": 5,
+     "sales": 362,
+     "years": 3,
+     "avg_sales": 120.7
+    },
+    {
+     "month": 6,
+     "sales": 361,
+     "years": 3,
+     "avg_sales": 120.3
+    },
+    {
+     "month": 7,
+     "sales": 342,
+     "years": 3,
+     "avg_sales": 114.0
+    },
+    {
+     "month": 8,
+     "sales": 309,
+     "years": 3,
+     "avg_sales": 103.0
+    },
+    {
+     "month": 9,
+     "sales": 221,
+     "years": 3,
+     "avg_sales": 73.7
+    },
+    {
+     "month": 10,
+     "sales": 249,
+     "years": 3,
+     "avg_sales": 83.0
+    },
+    {
+     "month": 11,
+     "sales": 208,
+     "years": 3,
+     "avg_sales": 69.3
+    },
+    {
+     "month": 12,
+     "sales": 199,
+     "years": 3,
+     "avg_sales": 66.3
+    }
+   ]
+  },
+  {
+   "id": "u:University of Virginia",
+   "kind": "campus",
+   "name": "University of Virginia",
+   "campus": "University of Virginia",
+   "places": [
+    "Charlottesville, VA"
+   ],
+   "rows": 2775,
+   "sales": 2759,
+   "excluded_by_price": 16,
+   "median_price": 613000.0,
+   "p25_price": 465000.0,
+   "p75_price": 865000.0,
+   "mean_price": 759055.1,
+   "median_ppsf": 269.51,
+   "ppsf_sales": 2757,
+   "median_dom": 7.0,
+   "dom_sales": 2049,
+   "no_list_date_share": 0.2519,
+   "price_change_12m": 0.0484,
+   "median_sqft": 2376.0,
+   "median_year_built": 1990.0,
+   "median_beds": 4.0,
+   "median_miles": 3.4,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 6
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 6
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 15
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 34
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 50
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 104
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 146
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 239
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 250
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 243
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 225
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 186
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 161
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 124
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 125
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 116
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 110
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 76
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 82
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 32
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 31
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 45
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 30
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 20
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 19
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 21
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 25
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 16
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 14
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 207
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 153,
+     "median_price": 580000.0,
+     "median_ppsf": 340.5
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 466,
+     "median_price": 590000.0,
+     "median_ppsf": 316.3
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 606,
+     "median_price": 570378.5,
+     "median_ppsf": 281.0
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 618,
+     "median_price": 690000.0,
+     "median_ppsf": 252.37
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 631,
+     "median_price": 610000.0,
+     "median_ppsf": 248.06
+    },
+    {
+     "label": "8+ mi",
+     "sales": 285,
+     "median_price": 714400.0,
+     "median_ppsf": 261.98
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 331,
+     "median_price": 544500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 209,
+     "median_price": 595000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 170,
+     "median_price": 589000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 178,
+     "median_price": 588576.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 310,
+     "median_price": 628250.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 247,
+     "median_price": 625000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 228,
+     "median_price": 604000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 164,
+     "median_price": 633201.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 320,
+     "median_price": 667500.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 226,
+     "median_price": 600000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 241,
+     "median_price": 700000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 122,
+     "median_price": 631000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 147,
+     "years": 3,
+     "avg_sales": 49.0
+    },
+    {
+     "month": 2,
+     "sales": 123,
+     "years": 3,
+     "avg_sales": 41.0
+    },
+    {
+     "month": 3,
+     "sales": 142,
+     "years": 2,
+     "avg_sales": 71.0
+    },
+    {
+     "month": 4,
+     "sales": 269,
+     "years": 3,
+     "avg_sales": 89.7
+    },
+    {
+     "month": 5,
+     "sales": 344,
+     "years": 3,
+     "avg_sales": 114.7
+    },
+    {
+     "month": 6,
+     "sales": 348,
+     "years": 3,
+     "avg_sales": 116.0
+    },
+    {
+     "month": 7,
+     "sales": 269,
+     "years": 3,
+     "avg_sales": 89.7
+    },
+    {
+     "month": 8,
+     "sales": 252,
+     "years": 3,
+     "avg_sales": 84.0
+    },
+    {
+     "month": 9,
+     "sales": 161,
+     "years": 3,
+     "avg_sales": 53.7
+    },
+    {
+     "month": 10,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 11,
+     "sales": 174,
+     "years": 3,
+     "avg_sales": 58.0
+    },
+    {
+     "month": 12,
+     "sales": 237,
+     "years": 3,
+     "avg_sales": 79.0
+    }
+   ]
+  },
+  {
+   "id": "u:University of Wisconsin-Madison",
+   "kind": "campus",
+   "name": "University of Wisconsin-Madison",
+   "campus": "University of Wisconsin-Madison",
+   "places": [
+    "Madison, WI",
+    "Middleton, WI"
+   ],
+   "rows": 5706,
+   "sales": 5706,
+   "excluded_by_price": 0,
+   "median_price": 434010.0,
+   "p25_price": 365000.0,
+   "p75_price": 556875.0,
+   "mean_price": 503386.53,
+   "median_ppsf": 249.16,
+   "ppsf_sales": 5705,
+   "median_dom": 7.0,
+   "dom_sales": 4628,
+   "no_list_date_share": 0.1863,
+   "price_change_12m": 0.0557,
+   "median_sqft": 1784.0,
+   "median_year_built": 1968.0,
+   "median_beds": 3.0,
+   "median_miles": 4.8,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 9
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 15
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 53
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 111
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 247
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 663
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 990
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 998
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 652
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 455
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 347
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 224
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 166
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 165
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 118
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 88
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 78
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 58
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 48
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 26
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 20
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 19
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 17
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 20
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 19
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 14
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 6
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 12
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 3
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 64
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 85,
+     "median_price": 678000.0,
+     "median_ppsf": 361.21
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 286,
+     "median_price": 600000.0,
+     "median_ppsf": 365.72
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 484,
+     "median_price": 539500.0,
+     "median_ppsf": 323.32
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 2105,
+     "median_price": 399900.0,
+     "median_ppsf": 257.17
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 2643,
+     "median_price": 433000.0,
+     "median_ppsf": 230.95
+    },
+    {
+     "label": "8+ mi",
+     "sales": 103,
+     "median_price": 560000.0,
+     "median_ppsf": 241.02
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 524,
+     "median_price": 402291.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 521,
+     "median_price": 410000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 434,
+     "median_price": 399950.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 293,
+     "median_price": 420000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 572,
+     "median_price": 450000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 585,
+     "median_price": 432000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 443,
+     "median_price": 421000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 326,
+     "median_price": 425000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 614,
+     "median_price": 465000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 560,
+     "median_price": 450000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 496,
+     "median_price": 445000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 304,
+     "median_price": 455000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 269,
+     "years": 3,
+     "avg_sales": 89.7
+    },
+    {
+     "month": 2,
+     "sales": 310,
+     "years": 3,
+     "avg_sales": 103.3
+    },
+    {
+     "month": 3,
+     "sales": 256,
+     "years": 2,
+     "avg_sales": 128.0
+    },
+    {
+     "month": 4,
+     "sales": 480,
+     "years": 3,
+     "avg_sales": 160.0
+    },
+    {
+     "month": 5,
+     "sales": 582,
+     "years": 3,
+     "avg_sales": 194.0
+    },
+    {
+     "month": 6,
+     "sales": 648,
+     "years": 3,
+     "avg_sales": 216.0
+    },
+    {
+     "month": 7,
+     "sales": 624,
+     "years": 3,
+     "avg_sales": 208.0
+    },
+    {
+     "month": 8,
+     "sales": 589,
+     "years": 3,
+     "avg_sales": 196.3
+    },
+    {
+     "month": 9,
+     "sales": 453,
+     "years": 3,
+     "avg_sales": 151.0
+    },
+    {
+     "month": 10,
+     "sales": 504,
+     "years": 3,
+     "avg_sales": 168.0
+    },
+    {
+     "month": 11,
+     "sales": 451,
+     "years": 3,
+     "avg_sales": 150.3
+    },
+    {
+     "month": 12,
+     "sales": 418,
+     "years": 3,
+     "avg_sales": 139.3
+    }
+   ]
+  },
+  {
+   "id": "c:Ann Arbor, MI",
+   "kind": "city",
+   "name": "Ann Arbor, MI",
+   "campus": "University of Michigan",
+   "rows": 3021,
+   "sales": 3007,
+   "excluded_by_price": 14,
+   "median_price": 572000.0,
+   "p25_price": 440000.0,
+   "p75_price": 765000.0,
+   "mean_price": 653387.56,
+   "median_ppsf": 259.22,
+   "ppsf_sales": 2998,
+   "median_dom": 7.0,
+   "dom_sales": 2448,
+   "no_list_date_share": 0.1676,
+   "price_change_12m": 0.0086,
+   "median_sqft": 2221.0,
+   "median_year_built": 1966.0,
+   "median_beds": 4.0,
+   "median_miles": 2.7,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 5
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 12
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 29
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 45
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 74
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 147
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 214
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 259
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 302
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 271
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 270
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 258
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 166
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 160
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 133
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 81
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 80
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 82
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 52
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 35
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 41
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 40
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 40
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 36
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 20
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 16
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 21
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 17
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 11
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 89
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 179,
+     "median_price": 700000.0,
+     "median_ppsf": 427.44
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 794,
+     "median_price": 575000.0,
+     "median_ppsf": 332.21
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 788,
+     "median_price": 505000.0,
+     "median_ppsf": 251.65
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 832,
+     "median_price": 600000.0,
+     "median_ppsf": 226.17
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 402,
+     "median_price": 619310.0,
+     "median_ppsf": 213.39
+    },
+    {
+     "label": "8+ mi",
+     "sales": 12,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 397,
+     "median_price": 571000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 286,
+     "median_price": 552875.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 218,
+     "median_price": 528500.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 151,
+     "median_price": 535000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 263,
+     "median_price": 570000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 278,
+     "median_price": 600000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 215,
+     "median_price": 549000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 175,
+     "median_price": 580000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 341,
+     "median_price": 610000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 308,
+     "median_price": 573500.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 223,
+     "median_price": 580000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 138,
+     "median_price": 564000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 123,
+     "years": 3,
+     "avg_sales": 41.0
+    },
+    {
+     "month": 2,
+     "sales": 146,
+     "years": 3,
+     "avg_sales": 48.7
+    },
+    {
+     "month": 3,
+     "sales": 142,
+     "years": 2,
+     "avg_sales": 71.0
+    },
+    {
+     "month": 4,
+     "sales": 278,
+     "years": 3,
+     "avg_sales": 92.7
+    },
+    {
+     "month": 5,
+     "sales": 362,
+     "years": 3,
+     "avg_sales": 120.7
+    },
+    {
+     "month": 6,
+     "sales": 361,
+     "years": 3,
+     "avg_sales": 120.3
+    },
+    {
+     "month": 7,
+     "sales": 342,
+     "years": 3,
+     "avg_sales": 114.0
+    },
+    {
+     "month": 8,
+     "sales": 309,
+     "years": 3,
+     "avg_sales": 103.0
+    },
+    {
+     "month": 9,
+     "sales": 221,
+     "years": 3,
+     "avg_sales": 73.7
+    },
+    {
+     "month": 10,
+     "sales": 249,
+     "years": 3,
+     "avg_sales": 83.0
+    },
+    {
+     "month": 11,
+     "sales": 208,
+     "years": 3,
+     "avg_sales": 69.3
+    },
+    {
+     "month": 12,
+     "sales": 199,
+     "years": 3,
+     "avg_sales": 66.3
+    }
+   ]
+  },
+  {
+   "id": "c:Athens, GA",
+   "kind": "city",
+   "name": "Athens, GA",
+   "campus": "University of Georgia",
+   "rows": 2814,
+   "sales": 2805,
+   "excluded_by_price": 9,
+   "median_price": 370000.0,
+   "p25_price": 300000.0,
+   "p75_price": 495900.0,
+   "mean_price": 455638.72,
+   "median_ppsf": 196.75,
+   "ppsf_sales": 2352,
+   "median_dom": 27.0,
+   "dom_sales": 2278,
+   "no_list_date_share": 0.159,
+   "price_change_12m": -0.0107,
+   "median_sqft": 1902.0,
+   "median_year_built": 1992.0,
+   "median_beds": 3.0,
+   "median_miles": 3.7,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 13
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 21
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 30
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 65
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 169
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 395
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 506
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 451
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 296
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 172
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 120
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 87
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 67
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 74
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 49
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 48
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 30
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 35
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 19
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 19
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 7
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 19
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 12
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 14
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 14
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 6
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 3
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 6
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 6
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 49
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 107,
+     "median_price": 385000.0,
+     "median_ppsf": 269.17
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 453,
+     "median_price": 420000.0,
+     "median_ppsf": 278.19
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 390,
+     "median_price": 389625.0,
+     "median_ppsf": 209.21
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1195,
+     "median_price": 347000.0,
+     "median_ppsf": 188.66
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 596,
+     "median_price": 386585.0,
+     "median_ppsf": 185.89
+    },
+    {
+     "label": "8+ mi",
+     "sales": 64,
+     "median_price": 499900.0,
+     "median_ppsf": 181.78
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 271,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 247,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 186,
+     "median_price": 389352.5
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 221,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 331,
+     "median_price": 379680.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 229,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 209,
+     "median_price": 360000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 198,
+     "median_price": 369450.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 305,
+     "median_price": 385000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 234,
+     "median_price": 366250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 211,
+     "median_price": 359000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 148,
+     "median_price": 356250.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 169,
+     "years": 3,
+     "avg_sales": 56.3
+    },
+    {
+     "month": 2,
+     "sales": 177,
+     "years": 3,
+     "avg_sales": 59.0
+    },
+    {
+     "month": 3,
+     "sales": 168,
+     "years": 2,
+     "avg_sales": 84.0
+    },
+    {
+     "month": 4,
+     "sales": 266,
+     "years": 3,
+     "avg_sales": 88.7
+    },
+    {
+     "month": 5,
+     "sales": 341,
+     "years": 3,
+     "avg_sales": 113.7
+    },
+    {
+     "month": 6,
+     "sales": 300,
+     "years": 3,
+     "avg_sales": 100.0
+    },
+    {
+     "month": 7,
+     "sales": 263,
+     "years": 3,
+     "avg_sales": 87.7
+    },
+    {
+     "month": 8,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 9,
+     "sales": 219,
+     "years": 3,
+     "avg_sales": 73.0
+    },
+    {
+     "month": 10,
+     "sales": 200,
+     "years": 3,
+     "avg_sales": 66.7
+    },
+    {
+     "month": 11,
+     "sales": 167,
+     "years": 3,
+     "avg_sales": 55.7
+    },
+    {
+     "month": 12,
+     "sales": 239,
+     "years": 3,
+     "avg_sales": 79.7
+    }
+   ]
+  },
+  {
+   "id": "c:Carrboro, NC",
+   "kind": "city",
+   "name": "Carrboro, NC",
+   "campus": "The University of North Carolina at Chapel Hill",
+   "rows": 208,
+   "sales": 205,
+   "excluded_by_price": 3,
+   "median_price": 605000.0,
+   "p25_price": 440000.0,
+   "p75_price": 745000.0,
+   "mean_price": 621410.15,
+   "median_ppsf": 316.4,
+   "ppsf_sales": 204,
+   "median_dom": 7.0,
+   "dom_sales": 149,
+   "no_list_date_share": 0.2683,
+   "price_change_12m": -0.0262,
+   "median_sqft": 1801.5,
+   "median_year_built": 1984.0,
+   "median_beds": 3.0,
+   "median_miles": 1.9,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 0
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 0
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 4
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 6
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 7
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 20
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 16
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 22
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 10
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 15
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 24
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 17
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 13
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 9
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 11
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 8
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 4
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 3
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 4
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 6
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 1
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 1
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 1
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 0
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 1
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 3,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 116,
+     "median_price": 637000.0,
+     "median_ppsf": 336.13
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 85,
+     "median_price": 551000.0,
+     "median_ppsf": 298.11
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 1,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 21,
+     "median_price": 591000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 26,
+     "median_price": 596250.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 14,
+     "median_price": 459500.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 15,
+     "median_price": 550000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 16,
+     "median_price": 700000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 12,
+     "median_price": 632500.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 12,
+     "median_price": 615000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 11,
+     "median_price": 525000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 24,
+     "median_price": 636937.5
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 24,
+     "median_price": 515000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 16,
+     "median_price": 608750.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 14,
+     "median_price": 615000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 11,
+     "years": 3,
+     "avg_sales": 3.7
+    },
+    {
+     "month": 2,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 3,
+     "sales": 15,
+     "years": 2,
+     "avg_sales": 7.5
+    },
+    {
+     "month": 4,
+     "sales": 16,
+     "years": 3,
+     "avg_sales": 5.3
+    },
+    {
+     "month": 5,
+     "sales": 26,
+     "years": 3,
+     "avg_sales": 8.7
+    },
+    {
+     "month": 6,
+     "sales": 19,
+     "years": 3,
+     "avg_sales": 6.3
+    },
+    {
+     "month": 7,
+     "sales": 14,
+     "years": 3,
+     "avg_sales": 4.7
+    },
+    {
+     "month": 8,
+     "sales": 26,
+     "years": 3,
+     "avg_sales": 8.7
+    },
+    {
+     "month": 9,
+     "sales": 22,
+     "years": 3,
+     "avg_sales": 7.3
+    },
+    {
+     "month": 10,
+     "sales": 19,
+     "years": 3,
+     "avg_sales": 6.3
+    },
+    {
+     "month": 11,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 12,
+     "sales": 13,
+     "years": 3,
+     "avg_sales": 4.3
+    }
+   ]
+  },
+  {
+   "id": "c:Champaign, IL",
+   "kind": "city",
+   "name": "Champaign, IL",
+   "campus": "University of Illinois Urbana-Champaign",
+   "rows": 2286,
+   "sales": 2285,
+   "excluded_by_price": 1,
+   "median_price": 240000.0,
+   "p25_price": 162000.0,
+   "p75_price": 350000.0,
+   "mean_price": 277393.76,
+   "median_ppsf": 149.68,
+   "ppsf_sales": 2275,
+   "median_dom": 7.0,
+   "dom_sales": 1784,
+   "no_list_date_share": 0.2114,
+   "price_change_12m": 0.012,
+   "median_sqft": 1645.0,
+   "median_year_built": 1969.0,
+   "median_beds": 3.0,
+   "median_miles": 3.0,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 25
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 172
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 267
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 384
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 366
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 261
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 234
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 185
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 106
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 86
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 54
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 30
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 27
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 24
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 19
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 11
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 11
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 6
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 2
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 4
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 1
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 1
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 1
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 1
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 2
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 8,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 370,
+     "median_price": 200000.0,
+     "median_ppsf": 143.38
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 718,
+     "median_price": 200000.0,
+     "median_ppsf": 139.77
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1011,
+     "median_price": 252000.0,
+     "median_ppsf": 150.87
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 172,
+     "median_price": 492450.0,
+     "median_ppsf": 201.61
+    },
+    {
+     "label": "8+ mi",
+     "sales": 6,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 247,
+     "median_price": 205000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 233,
+     "median_price": 235000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 177,
+     "median_price": 199900.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 129,
+     "median_price": 203000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 202,
+     "median_price": 244750.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 246,
+     "median_price": 269700.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 187,
+     "median_price": 235000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 124,
+     "median_price": 244950.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 214,
+     "median_price": 261250.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 214,
+     "median_price": 255000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 165,
+     "median_price": 249900.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 129,
+     "median_price": 242500.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 106,
+     "years": 3,
+     "avg_sales": 35.3
+    },
+    {
+     "month": 2,
+     "sales": 137,
+     "years": 3,
+     "avg_sales": 45.7
+    },
+    {
+     "month": 3,
+     "sales": 97,
+     "years": 2,
+     "avg_sales": 48.5
+    },
+    {
+     "month": 4,
+     "sales": 169,
+     "years": 3,
+     "avg_sales": 56.3
+    },
+    {
+     "month": 5,
+     "sales": 233,
+     "years": 3,
+     "avg_sales": 77.7
+    },
+    {
+     "month": 6,
+     "sales": 261,
+     "years": 3,
+     "avg_sales": 87.0
+    },
+    {
+     "month": 7,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 8,
+     "sales": 272,
+     "years": 3,
+     "avg_sales": 90.7
+    },
+    {
+     "month": 9,
+     "sales": 193,
+     "years": 3,
+     "avg_sales": 64.3
+    },
+    {
+     "month": 10,
+     "sales": 209,
+     "years": 3,
+     "avg_sales": 69.7
+    },
+    {
+     "month": 11,
+     "sales": 140,
+     "years": 3,
+     "avg_sales": 46.7
+    },
+    {
+     "month": 12,
+     "sales": 180,
+     "years": 3,
+     "avg_sales": 60.0
+    }
+   ]
+  },
+  {
+   "id": "c:Chapel Hill, NC",
+   "kind": "city",
+   "name": "Chapel Hill, NC",
+   "campus": "The University of North Carolina at Chapel Hill",
+   "rows": 2716,
+   "sales": 2705,
+   "excluded_by_price": 11,
+   "median_price": 734000.0,
+   "p25_price": 550000.0,
+   "p75_price": 975000.0,
+   "mean_price": 823824.21,
+   "median_ppsf": 276.71,
+   "ppsf_sales": 2698,
+   "median_dom": 10.0,
+   "dom_sales": 2202,
+   "no_list_date_share": 0.1804,
+   "price_change_12m": -0.0268,
+   "median_sqft": 2677.5,
+   "median_year_built": 1997.0,
+   "median_beds": 4.0,
+   "median_miles": 3.9,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 3
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 9
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 9
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 18
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 28
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 39
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 44
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 70
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 126
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 151
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 171
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 184
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 198
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 186
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 164
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 183
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 143
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 124
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 115
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 113
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 65
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 49
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 61
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 54
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 59
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 44
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 37
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 22
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 33
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 20
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 183
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 120,
+     "median_price": 969500.0,
+     "median_ppsf": 400.18
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 303,
+     "median_price": 795000.0,
+     "median_ppsf": 301.0
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 458,
+     "median_price": 750000.0,
+     "median_ppsf": 315.0
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 867,
+     "median_price": 735000.0,
+     "median_ppsf": 271.04
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 775,
+     "median_price": 650000.0,
+     "median_ppsf": 262.27
+    },
+    {
+     "label": "8+ mi",
+     "sales": 182,
+     "median_price": 827500.0,
+     "median_ppsf": 231.45
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 326,
+     "median_price": 737500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 214,
+     "median_price": 723500.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 171,
+     "median_price": 690000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 177,
+     "median_price": 745000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 287,
+     "median_price": 758500.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 224,
+     "median_price": 750000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 191,
+     "median_price": 740000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 178,
+     "median_price": 705750.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 309,
+     "median_price": 760000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 235,
+     "median_price": 725000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 232,
+     "median_price": 662850.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 134,
+     "median_price": 705000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 144,
+     "years": 3,
+     "avg_sales": 48.0
+    },
+    {
+     "month": 2,
+     "sales": 141,
+     "years": 3,
+     "avg_sales": 47.0
+    },
+    {
+     "month": 3,
+     "sales": 165,
+     "years": 2,
+     "avg_sales": 82.5
+    },
+    {
+     "month": 4,
+     "sales": 249,
+     "years": 3,
+     "avg_sales": 83.0
+    },
+    {
+     "month": 5,
+     "sales": 338,
+     "years": 3,
+     "avg_sales": 112.7
+    },
+    {
+     "month": 6,
+     "sales": 335,
+     "years": 3,
+     "avg_sales": 111.7
+    },
+    {
+     "month": 7,
+     "sales": 261,
+     "years": 3,
+     "avg_sales": 87.0
+    },
+    {
+     "month": 8,
+     "sales": 219,
+     "years": 3,
+     "avg_sales": 73.0
+    },
+    {
+     "month": 9,
+     "sales": 193,
+     "years": 3,
+     "avg_sales": 64.3
+    },
+    {
+     "month": 10,
+     "sales": 232,
+     "years": 3,
+     "avg_sales": 77.3
+    },
+    {
+     "month": 11,
+     "sales": 188,
+     "years": 3,
+     "avg_sales": 62.7
+    },
+    {
+     "month": 12,
+     "sales": 174,
+     "years": 3,
+     "avg_sales": 58.0
+    }
+   ]
+  },
+  {
+   "id": "c:Charlottesville, VA",
+   "kind": "city",
+   "name": "Charlottesville, VA",
+   "campus": "University of Virginia",
+   "rows": 2775,
+   "sales": 2759,
+   "excluded_by_price": 16,
+   "median_price": 613000.0,
+   "p25_price": 465000.0,
+   "p75_price": 865000.0,
+   "mean_price": 759055.1,
+   "median_ppsf": 269.51,
+   "ppsf_sales": 2757,
+   "median_dom": 7.0,
+   "dom_sales": 2049,
+   "no_list_date_share": 0.2519,
+   "price_change_12m": 0.0484,
+   "median_sqft": 2376.0,
+   "median_year_built": 1990.0,
+   "median_beds": 4.0,
+   "median_miles": 3.4,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 6
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 6
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 15
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 34
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 50
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 104
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 146
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 239
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 250
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 243
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 225
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 186
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 161
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 124
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 125
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 116
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 110
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 76
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 82
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 32
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 31
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 45
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 30
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 20
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 19
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 21
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 25
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 16
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 14
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 207
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 153,
+     "median_price": 580000.0,
+     "median_ppsf": 340.5
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 466,
+     "median_price": 590000.0,
+     "median_ppsf": 316.3
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 606,
+     "median_price": 570378.5,
+     "median_ppsf": 281.0
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 618,
+     "median_price": 690000.0,
+     "median_ppsf": 252.37
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 631,
+     "median_price": 610000.0,
+     "median_ppsf": 248.06
+    },
+    {
+     "label": "8+ mi",
+     "sales": 285,
+     "median_price": 714400.0,
+     "median_ppsf": 261.98
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 331,
+     "median_price": 544500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 209,
+     "median_price": 595000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 170,
+     "median_price": 589000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 178,
+     "median_price": 588576.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 310,
+     "median_price": 628250.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 247,
+     "median_price": 625000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 228,
+     "median_price": 604000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 164,
+     "median_price": 633201.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 320,
+     "median_price": 667500.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 226,
+     "median_price": 600000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 241,
+     "median_price": 700000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 122,
+     "median_price": 631000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 147,
+     "years": 3,
+     "avg_sales": 49.0
+    },
+    {
+     "month": 2,
+     "sales": 123,
+     "years": 3,
+     "avg_sales": 41.0
+    },
+    {
+     "month": 3,
+     "sales": 142,
+     "years": 2,
+     "avg_sales": 71.0
+    },
+    {
+     "month": 4,
+     "sales": 269,
+     "years": 3,
+     "avg_sales": 89.7
+    },
+    {
+     "month": 5,
+     "sales": 344,
+     "years": 3,
+     "avg_sales": 114.7
+    },
+    {
+     "month": 6,
+     "sales": 348,
+     "years": 3,
+     "avg_sales": 116.0
+    },
+    {
+     "month": 7,
+     "sales": 269,
+     "years": 3,
+     "avg_sales": 89.7
+    },
+    {
+     "month": 8,
+     "sales": 252,
+     "years": 3,
+     "avg_sales": 84.0
+    },
+    {
+     "month": 9,
+     "sales": 161,
+     "years": 3,
+     "avg_sales": 53.7
+    },
+    {
+     "month": 10,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 11,
+     "sales": 174,
+     "years": 3,
+     "avg_sales": 58.0
+    },
+    {
+     "month": 12,
+     "sales": 237,
+     "years": 3,
+     "avg_sales": 79.0
+    }
+   ]
+  },
+  {
+   "id": "c:Davis, CA",
+   "kind": "city",
+   "name": "Davis, CA",
+   "campus": "University of California, Davis",
+   "rows": 941,
+   "sales": 941,
+   "excluded_by_price": 0,
+   "median_price": 889000.0,
+   "p25_price": 745000.0,
+   "p75_price": 1150000.0,
+   "mean_price": 976896.14,
+   "median_ppsf": 492.71,
+   "ppsf_sales": 941,
+   "median_dom": 11.0,
+   "dom_sales": 792,
+   "no_list_date_share": 0.153,
+   "price_change_12m": -0.0317,
+   "median_sqft": 1842.0,
+   "median_year_built": 1978.0,
+   "median_beds": 3.0,
+   "median_miles": 2.0,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 1
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 0
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 2
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 2
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 4
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 4
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 7
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 8
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 16
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 22
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 49
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 54
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 72
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 90
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 74
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 79
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 58
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 63
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 34
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 35
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 26
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 28
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 38
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 20
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 26
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 13
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 21
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 12
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 83
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 76,
+     "median_price": 925000.0,
+     "median_ppsf": 524.89
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 358,
+     "median_price": 841000.0,
+     "median_ppsf": 497.78
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 441,
+     "median_price": 899000.0,
+     "median_ppsf": 489.27
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 58,
+     "median_price": 1260000.0,
+     "median_ppsf": 461.19
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 8,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 110,
+     "median_price": 950000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 81,
+     "median_price": 861000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 56,
+     "median_price": 800000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 62,
+     "median_price": 895000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 97,
+     "median_price": 965000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 86,
+     "median_price": 1000000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 50,
+     "median_price": 782000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 61,
+     "median_price": 925000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 121,
+     "median_price": 902000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 92,
+     "median_price": 879250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 73,
+     "median_price": 815000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 44,
+     "median_price": 798000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 43,
+     "years": 3,
+     "avg_sales": 14.3
+    },
+    {
+     "month": 2,
+     "sales": 55,
+     "years": 3,
+     "avg_sales": 18.3
+    },
+    {
+     "month": 3,
+     "sales": 53,
+     "years": 2,
+     "avg_sales": 26.5
+    },
+    {
+     "month": 4,
+     "sales": 99,
+     "years": 3,
+     "avg_sales": 33.0
+    },
+    {
+     "month": 5,
+     "sales": 121,
+     "years": 3,
+     "avg_sales": 40.3
+    },
+    {
+     "month": 6,
+     "sales": 108,
+     "years": 3,
+     "avg_sales": 36.0
+    },
+    {
+     "month": 7,
+     "sales": 96,
+     "years": 3,
+     "avg_sales": 32.0
+    },
+    {
+     "month": 8,
+     "sales": 89,
+     "years": 3,
+     "avg_sales": 29.7
+    },
+    {
+     "month": 9,
+     "sales": 74,
+     "years": 3,
+     "avg_sales": 24.7
+    },
+    {
+     "month": 10,
+     "sales": 79,
+     "years": 3,
+     "avg_sales": 26.3
+    },
+    {
+     "month": 11,
+     "sales": 53,
+     "years": 3,
+     "avg_sales": 17.7
+    },
+    {
+     "month": 12,
+     "sales": 47,
+     "years": 3,
+     "avg_sales": 15.7
+    }
+   ]
+  },
+  {
+   "id": "c:Gainesville, FL",
+   "kind": "city",
+   "name": "Gainesville, FL",
+   "campus": "University of Florida",
+   "rows": 5477,
+   "sales": 5467,
+   "excluded_by_price": 10,
+   "median_price": 350000.0,
+   "p25_price": 259900.0,
+   "p75_price": 450000.0,
+   "mean_price": 394709.42,
+   "median_ppsf": 203.53,
+   "ppsf_sales": 5461,
+   "median_dom": 25.0,
+   "dom_sales": 4372,
+   "no_list_date_share": 0.1869,
+   "price_change_12m": -0.0021,
+   "median_sqft": 1735.0,
+   "median_year_built": 1987.0,
+   "median_beds": 3.0,
+   "median_miles": 4.3,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 57
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 111
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 181
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 309
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 561
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 782
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 695
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 753
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 636
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 334
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 227
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 171
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 121
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 96
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 71
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 80
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 36
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 49
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 29
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 28
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 13
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 9
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 15
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 13
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 16
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 11
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 3
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 10
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 6
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 5
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 39
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 135,
+     "median_price": 408500.0,
+     "median_ppsf": 242.75
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 473,
+     "median_price": 355000.0,
+     "median_ppsf": 212.9
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 951,
+     "median_price": 261000.0,
+     "median_ppsf": 187.15
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1756,
+     "median_price": 310000.0,
+     "median_ppsf": 192.98
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 2006,
+     "median_price": 410000.0,
+     "median_ppsf": 214.55
+    },
+    {
+     "label": "8+ mi",
+     "sales": 146,
+     "median_price": 420000.0,
+     "median_ppsf": 222.46
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 587,
+     "median_price": 366730.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 425,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 383,
+     "median_price": 320000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 362,
+     "median_price": 360000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 592,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 447,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 399,
+     "median_price": 345000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 382,
+     "median_price": 359500.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 633,
+     "median_price": 365000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 470,
+     "median_price": 345450.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 428,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 314,
+     "median_price": 334000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 311,
+     "years": 3,
+     "avg_sales": 103.7
+    },
+    {
+     "month": 2,
+     "sales": 360,
+     "years": 3,
+     "avg_sales": 120.0
+    },
+    {
+     "month": 3,
+     "sales": 286,
+     "years": 2,
+     "avg_sales": 143.0
+    },
+    {
+     "month": 4,
+     "sales": 550,
+     "years": 3,
+     "avg_sales": 183.3
+    },
+    {
+     "month": 5,
+     "sales": 637,
+     "years": 3,
+     "avg_sales": 212.3
+    },
+    {
+     "month": 6,
+     "sales": 625,
+     "years": 3,
+     "avg_sales": 208.3
+    },
+    {
+     "month": 7,
+     "sales": 523,
+     "years": 3,
+     "avg_sales": 174.3
+    },
+    {
+     "month": 8,
+     "sales": 438,
+     "years": 3,
+     "avg_sales": 146.0
+    },
+    {
+     "month": 9,
+     "sales": 381,
+     "years": 3,
+     "avg_sales": 127.0
+    },
+    {
+     "month": 10,
+     "sales": 407,
+     "years": 3,
+     "avg_sales": 135.7
+    },
+    {
+     "month": 11,
+     "sales": 329,
+     "years": 3,
+     "avg_sales": 109.7
+    },
+    {
+     "month": 12,
+     "sales": 474,
+     "years": 3,
+     "avg_sales": 158.0
+    }
+   ]
+  },
+  {
+   "id": "c:Iowa City, IA",
+   "kind": "city",
+   "name": "Iowa City, IA",
+   "campus": "The University of Iowa",
+   "rows": 1909,
+   "sales": 1909,
+   "excluded_by_price": 0,
+   "median_price": 342000.0,
+   "p25_price": 257500.0,
+   "p75_price": 460000.0,
+   "mean_price": 389733.99,
+   "median_ppsf": 175.91,
+   "ppsf_sales": 1907,
+   "median_dom": 23.5,
+   "dom_sales": 1248,
+   "no_list_date_share": 0.0943,
+   "price_change_12m": 0.0086,
+   "median_sqft": 2034.0,
+   "median_year_built": 1976.0,
+   "median_beds": 4.0,
+   "median_miles": 2.2,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 10
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 40
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 113
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 263
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 292
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 264
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 215
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 175
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 150
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 78
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 80
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 61
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 36
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 29
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 24
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 17
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 15
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 12
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 2
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 2
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 4
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 4
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 3
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 1
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 1
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 3
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 7
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 171,
+     "median_price": 335000.0,
+     "median_ppsf": 205.59
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 635,
+     "median_price": 310000.0,
+     "median_ppsf": 175.98
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 658,
+     "median_price": 300000.0,
+     "median_ppsf": 162.29
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 415,
+     "median_price": 479900.0,
+     "median_ppsf": 186.03
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 19,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 11,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 223,
+     "median_price": 325000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 165,
+     "median_price": 339000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 123,
+     "median_price": 295000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 89,
+     "median_price": 315000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 209,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 177,
+     "median_price": 365000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 115,
+     "median_price": 325000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 100,
+     "median_price": 343600.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 257,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 198,
+     "median_price": 356250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 151,
+     "median_price": 350000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 94,
+     "median_price": 321695.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 97,
+     "years": 3,
+     "avg_sales": 32.3
+    },
+    {
+     "month": 2,
+     "sales": 87,
+     "years": 3,
+     "avg_sales": 29.0
+    },
+    {
+     "month": 3,
+     "sales": 68,
+     "years": 2,
+     "avg_sales": 34.0
+    },
+    {
+     "month": 4,
+     "sales": 159,
+     "years": 3,
+     "avg_sales": 53.0
+    },
+    {
+     "month": 5,
+     "sales": 237,
+     "years": 3,
+     "avg_sales": 79.0
+    },
+    {
+     "month": 6,
+     "sales": 293,
+     "years": 3,
+     "avg_sales": 97.7
+    },
+    {
+     "month": 7,
+     "sales": 233,
+     "years": 3,
+     "avg_sales": 77.7
+    },
+    {
+     "month": 8,
+     "sales": 190,
+     "years": 3,
+     "avg_sales": 63.3
+    },
+    {
+     "month": 9,
+     "sales": 117,
+     "years": 3,
+     "avg_sales": 39.0
+    },
+    {
+     "month": 10,
+     "sales": 144,
+     "years": 3,
+     "avg_sales": 48.0
+    },
+    {
+     "month": 11,
+     "sales": 129,
+     "years": 3,
+     "avg_sales": 43.0
+    },
+    {
+     "month": 12,
+     "sales": 116,
+     "years": 3,
+     "avg_sales": 38.7
+    }
+   ]
+  },
+  {
+   "id": "c:Lafayette, IN",
+   "kind": "city",
+   "name": "Lafayette, IN",
+   "campus": "Purdue University",
+   "rows": 3057,
+   "sales": 3053,
+   "excluded_by_price": 4,
+   "median_price": 260000.0,
+   "p25_price": 200000.0,
+   "p75_price": 330000.0,
+   "mean_price": 283162.25,
+   "median_ppsf": 163.05,
+   "ppsf_sales": 3052,
+   "median_dom": 9.0,
+   "dom_sales": 2603,
+   "no_list_date_share": 0.0491,
+   "price_change_12m": 0.0189,
+   "median_sqft": 1649.0,
+   "median_year_built": 1979.0,
+   "median_beds": 3.0,
+   "median_miles": 4.1,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 8
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 46
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 162
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 526
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 636
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 609
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 396
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 231
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 182
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 102
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 54
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 32
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 17
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 13
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 12
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 4
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 5
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 3
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 4
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 3
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 0
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 2
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 0
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 1
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 2
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 1
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 1
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 0
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 162,
+     "median_price": 175000.0,
+     "median_ppsf": 127.78
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 674,
+     "median_price": 195000.0,
+     "median_ppsf": 151.31
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1054,
+     "median_price": 243000.0,
+     "median_ppsf": 165.46
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 1006,
+     "median_price": 320950.0,
+     "median_ppsf": 166.85
+    },
+    {
+     "label": "8+ mi",
+     "sales": 157,
+     "median_price": 440000.0,
+     "median_ppsf": 177.56
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 258,
+     "median_price": 238450.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 274,
+     "median_price": 249900.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 227,
+     "median_price": 231000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 195,
+     "median_price": 240000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 295,
+     "median_price": 270000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 281,
+     "median_price": 269800.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 240,
+     "median_price": 265000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 185,
+     "median_price": 260000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 322,
+     "median_price": 272813.5
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 308,
+     "median_price": 270250.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 268,
+     "median_price": 272000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 188,
+     "median_price": 262450.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 164,
+     "years": 3,
+     "avg_sales": 54.7
+    },
+    {
+     "month": 2,
+     "sales": 197,
+     "years": 3,
+     "avg_sales": 65.7
+    },
+    {
+     "month": 3,
+     "sales": 143,
+     "years": 2,
+     "avg_sales": 71.5
+    },
+    {
+     "month": 4,
+     "sales": 271,
+     "years": 3,
+     "avg_sales": 90.3
+    },
+    {
+     "month": 5,
+     "sales": 307,
+     "years": 3,
+     "avg_sales": 102.3
+    },
+    {
+     "month": 6,
+     "sales": 297,
+     "years": 3,
+     "avg_sales": 99.0
+    },
+    {
+     "month": 7,
+     "sales": 288,
+     "years": 3,
+     "avg_sales": 96.0
+    },
+    {
+     "month": 8,
+     "sales": 302,
+     "years": 3,
+     "avg_sales": 100.7
+    },
+    {
+     "month": 9,
+     "sales": 273,
+     "years": 3,
+     "avg_sales": 91.0
+    },
+    {
+     "month": 10,
+     "sales": 262,
+     "years": 3,
+     "avg_sales": 87.3
+    },
+    {
+     "month": 11,
+     "sales": 228,
+     "years": 3,
+     "avg_sales": 76.0
+    },
+    {
+     "month": 12,
+     "sales": 245,
+     "years": 3,
+     "avg_sales": 81.7
+    }
+   ]
+  },
+  {
+   "id": "c:Madison, WI",
+   "kind": "city",
+   "name": "Madison, WI",
+   "campus": "University of Wisconsin-Madison",
+   "rows": 5061,
+   "sales": 5061,
+   "excluded_by_price": 0,
+   "median_price": 421000.0,
+   "p25_price": 357500.0,
+   "p75_price": 527000.0,
+   "mean_price": 477144.44,
+   "median_ppsf": 248.07,
+   "ppsf_sales": 5060,
+   "median_dom": 7.0,
+   "dom_sales": 4068,
+   "no_list_date_share": 0.1934,
+   "price_change_12m": 0.0546,
+   "median_sqft": 1737.0,
+   "median_year_built": 1965.0,
+   "median_beds": 3.0,
+   "median_miles": 4.6,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 1
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 9
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 15
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 51
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 111
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 244
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 656
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 949
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 917
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 597
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 403
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 276
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 184
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 126
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 118
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 85
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 63
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 46
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 43
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 29
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 15
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 11
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 10
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 11
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 11
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 15
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 8
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 4
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 9
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 3
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 41
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 85,
+     "median_price": 678000.0,
+     "median_ppsf": 361.21
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 286,
+     "median_price": 600000.0,
+     "median_ppsf": 365.72
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 484,
+     "median_price": 539500.0,
+     "median_ppsf": 323.32
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1945,
+     "median_price": 385000.0,
+     "median_ppsf": 257.17
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 2227,
+     "median_price": 420000.0,
+     "median_ppsf": 226.33
+    },
+    {
+     "label": "8+ mi",
+     "sales": 34,
+     "median_price": 420250.0,
+     "median_ppsf": 230.64
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 471,
+     "median_price": 390000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 465,
+     "median_price": 400000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 392,
+     "median_price": 388450.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 264,
+     "median_price": 417900.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 511,
+     "median_price": 430000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 504,
+     "median_price": 420000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 395,
+     "median_price": 410000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 289,
+     "median_price": 422000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 542,
+     "median_price": 450000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 488,
+     "median_price": 440000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 450,
+     "median_price": 435000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 261,
+     "median_price": 450000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 233,
+     "years": 3,
+     "avg_sales": 77.7
+    },
+    {
+     "month": 2,
+     "sales": 272,
+     "years": 3,
+     "avg_sales": 90.7
+    },
+    {
+     "month": 3,
+     "sales": 227,
+     "years": 2,
+     "avg_sales": 113.5
+    },
+    {
+     "month": 4,
+     "sales": 428,
+     "years": 3,
+     "avg_sales": 142.7
+    },
+    {
+     "month": 5,
+     "sales": 529,
+     "years": 3,
+     "avg_sales": 176.3
+    },
+    {
+     "month": 6,
+     "sales": 567,
+     "years": 3,
+     "avg_sales": 189.0
+    },
+    {
+     "month": 7,
+     "sales": 538,
+     "years": 3,
+     "avg_sales": 179.3
+    },
+    {
+     "month": 8,
+     "sales": 512,
+     "years": 3,
+     "avg_sales": 170.7
+    },
+    {
+     "month": 9,
+     "sales": 407,
+     "years": 3,
+     "avg_sales": 135.7
+    },
+    {
+     "month": 10,
+     "sales": 455,
+     "years": 3,
+     "avg_sales": 151.7
+    },
+    {
+     "month": 11,
+     "sales": 396,
+     "years": 3,
+     "avg_sales": 132.0
+    },
+    {
+     "month": 12,
+     "sales": 386,
+     "years": 3,
+     "avg_sales": 128.7
+    }
+   ]
+  },
+  {
+   "id": "c:Middleton, WI",
+   "kind": "city",
+   "name": "Middleton, WI",
+   "campus": "University of Wisconsin-Madison",
+   "rows": 645,
+   "sales": 645,
+   "excluded_by_price": 0,
+   "median_price": 611000.0,
+   "p25_price": 475000.0,
+   "p75_price": 825000.0,
+   "mean_price": 709295.4,
+   "median_ppsf": 256.26,
+   "ppsf_sales": 645,
+   "median_dom": 8.0,
+   "dom_sales": 560,
+   "no_list_date_share": 0.1302,
+   "price_change_12m": 0.1182,
+   "median_sqft": 2497.0,
+   "median_year_built": 2000.0,
+   "median_beds": 4.0,
+   "median_miles": 5.7,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 0
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 2
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 0
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 3
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 7
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 41
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 81
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 55
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 52
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 71
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 40
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 40
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 47
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 33
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 25
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 32
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 15
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 19
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 11
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 9
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 9
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 6
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 9
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 4
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 6
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 2
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 3
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 23
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 160,
+     "median_price": 605000.0,
+     "median_ppsf": 257.94
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 416,
+     "median_price": 598914.5,
+     "median_ppsf": 257.74
+    },
+    {
+     "label": "8+ mi",
+     "sales": 69,
+     "median_price": 679900.0,
+     "median_ppsf": 245.43
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 53,
+     "median_price": 630000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 56,
+     "median_price": 545000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 42,
+     "median_price": 560000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 29,
+     "median_price": 517500.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 61,
+     "median_price": 585000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 81,
+     "median_price": 660000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 48,
+     "median_price": 642500.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 37,
+     "median_price": 536500.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 72,
+     "median_price": 652840.5
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 72,
+     "median_price": 736127.5
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 46,
+     "median_price": 614400.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 43,
+     "median_price": 519900.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 36,
+     "years": 3,
+     "avg_sales": 12.0
+    },
+    {
+     "month": 2,
+     "sales": 38,
+     "years": 3,
+     "avg_sales": 12.7
+    },
+    {
+     "month": 3,
+     "sales": 29,
+     "years": 2,
+     "avg_sales": 14.5
+    },
+    {
+     "month": 4,
+     "sales": 52,
+     "years": 3,
+     "avg_sales": 17.3
+    },
+    {
+     "month": 5,
+     "sales": 53,
+     "years": 3,
+     "avg_sales": 17.7
+    },
+    {
+     "month": 6,
+     "sales": 81,
+     "years": 3,
+     "avg_sales": 27.0
+    },
+    {
+     "month": 7,
+     "sales": 86,
+     "years": 3,
+     "avg_sales": 28.7
+    },
+    {
+     "month": 8,
+     "sales": 77,
+     "years": 3,
+     "avg_sales": 25.7
+    },
+    {
+     "month": 9,
+     "sales": 46,
+     "years": 3,
+     "avg_sales": 15.3
+    },
+    {
+     "month": 10,
+     "sales": 49,
+     "years": 3,
+     "avg_sales": 16.3
+    },
+    {
+     "month": 11,
+     "sales": 55,
+     "years": 3,
+     "avg_sales": 18.3
+    },
+    {
+     "month": 12,
+     "sales": 32,
+     "years": 3,
+     "avg_sales": 10.7
+    }
+   ]
+  },
+  {
+   "id": "c:Newberry, FL",
+   "kind": "city",
+   "name": "Newberry, FL",
+   "campus": "University of Florida",
+   "rows": 152,
+   "sales": 152,
+   "excluded_by_price": 0,
+   "median_price": 439995.0,
+   "p25_price": 411500.0,
+   "p75_price": 475365.0,
+   "mean_price": 497059.61,
+   "median_ppsf": 184.7,
+   "ppsf_sales": 152,
+   "median_dom": 87.0,
+   "dom_sales": 133,
+   "no_list_date_share": 0.1053,
+   "price_change_12m": 0.0168,
+   "median_sqft": 2662.0,
+   "median_year_built": 2023.0,
+   "median_beds": 4.0,
+   "median_miles": 8.6,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 0
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 0
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 1
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 2
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 11
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 16
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 59
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 44
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 11
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 0
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 0
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 0
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 0
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 0
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 0
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 0
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 0
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 0
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 0
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 0
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 0
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 0
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 0
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 1
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 1
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 6
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 1,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 151,
+     "median_price": 440000.0,
+     "median_ppsf": 184.32
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 15,
+     "median_price": 439475.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 14,
+     "median_price": 448850.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 15,
+     "median_price": 453320.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 16,
+     "median_price": 453494.5
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 22,
+     "median_price": 445365.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 16,
+     "median_price": 422228.5
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 8,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 3,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 9,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 10,
+     "median_price": 442930.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 15,
+     "median_price": 428500.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 7,
+     "median_price": null
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 2,
+     "sales": 6,
+     "years": 3,
+     "avg_sales": 2.0
+    },
+    {
+     "month": 3,
+     "sales": 7,
+     "years": 2,
+     "avg_sales": 3.5
+    },
+    {
+     "month": 4,
+     "sales": 9,
+     "years": 3,
+     "avg_sales": 3.0
+    },
+    {
+     "month": 5,
+     "sales": 17,
+     "years": 3,
+     "avg_sales": 5.7
+    },
+    {
+     "month": 6,
+     "sales": 20,
+     "years": 3,
+     "avg_sales": 6.7
+    },
+    {
+     "month": 7,
+     "sales": 14,
+     "years": 3,
+     "avg_sales": 4.7
+    },
+    {
+     "month": 8,
+     "sales": 12,
+     "years": 3,
+     "avg_sales": 4.0
+    },
+    {
+     "month": 9,
+     "sales": 14,
+     "years": 3,
+     "avg_sales": 4.7
+    },
+    {
+     "month": 10,
+     "sales": 11,
+     "years": 3,
+     "avg_sales": 3.7
+    },
+    {
+     "month": 11,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 12,
+     "sales": 17,
+     "years": 3,
+     "avg_sales": 5.7
+    }
+   ]
+  },
+  {
+   "id": "c:Pittsboro, NC",
+   "kind": "city",
+   "name": "Pittsboro, NC",
+   "campus": "The University of North Carolina at Chapel Hill",
+   "rows": 92,
+   "sales": 92,
+   "excluded_by_price": 0,
+   "median_price": 876985.5,
+   "p25_price": 678000.0,
+   "p75_price": 1223125.0,
+   "mean_price": 954456.85,
+   "median_ppsf": 301.87,
+   "ppsf_sales": 89,
+   "median_dom": 38.0,
+   "dom_sales": 57,
+   "no_list_date_share": 0.3804,
+   "price_change_12m": null,
+   "median_sqft": 2970.0,
+   "median_year_built": 2015.0,
+   "median_beds": 3.0,
+   "median_miles": 8.0,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 0
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 0
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 2
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 1
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 0
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 0
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 0
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 1
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 0
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 1
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 4
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 8
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 15
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 7
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 1
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 3
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 5
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 1
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 7
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 3
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 5
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 3
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 3
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 1
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 2
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 4
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 9
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 43,
+     "median_price": 1215000.0,
+     "median_ppsf": 339.13
+    },
+    {
+     "label": "8+ mi",
+     "sales": 49,
+     "median_price": 715000.0,
+     "median_ppsf": 290.89
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 13,
+     "median_price": 775000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 8,
+     "median_price": null
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 4,
+     "median_price": null
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 5,
+     "median_price": null
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 11,
+     "median_price": 850000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 10,
+     "median_price": 985000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 5,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 7,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 7,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 8,
+     "median_price": null
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 9,
+     "median_price": null
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 4,
+     "median_price": null
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 5,
+     "years": 3,
+     "avg_sales": 1.7
+    },
+    {
+     "month": 2,
+     "sales": 8,
+     "years": 3,
+     "avg_sales": 2.7
+    },
+    {
+     "month": 3,
+     "sales": 2,
+     "years": 2,
+     "avg_sales": 1.0
+    },
+    {
+     "month": 4,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 5,
+     "sales": 11,
+     "years": 3,
+     "avg_sales": 3.7
+    },
+    {
+     "month": 6,
+     "sales": 10,
+     "years": 3,
+     "avg_sales": 3.3
+    },
+    {
+     "month": 7,
+     "sales": 8,
+     "years": 3,
+     "avg_sales": 2.7
+    },
+    {
+     "month": 8,
+     "sales": 7,
+     "years": 3,
+     "avg_sales": 2.3
+    },
+    {
+     "month": 9,
+     "sales": 11,
+     "years": 3,
+     "avg_sales": 3.7
+    },
+    {
+     "month": 10,
+     "sales": 2,
+     "years": 3,
+     "avg_sales": 0.7
+    },
+    {
+     "month": 11,
+     "sales": 8,
+     "years": 3,
+     "avg_sales": 2.7
+    },
+    {
+     "month": 12,
+     "sales": 8,
+     "years": 3,
+     "avg_sales": 2.7
+    }
+   ]
+  },
+  {
+   "id": "c:Savoy, IL",
+   "kind": "city",
+   "name": "Savoy, IL",
+   "campus": "University of Illinois Urbana-Champaign",
+   "rows": 247,
+   "sales": 247,
+   "excluded_by_price": 0,
+   "median_price": 402700.0,
+   "p25_price": 343000.0,
+   "p75_price": 481000.0,
+   "mean_price": 420053.16,
+   "median_ppsf": 186.74,
+   "ppsf_sales": 247,
+   "median_dom": 10.5,
+   "dom_sales": 212,
+   "no_list_date_share": 0.1336,
+   "price_change_12m": 0.0459,
+   "median_sqft": 2151.0,
+   "median_year_built": 2010.0,
+   "median_beds": 4.0,
+   "median_miles": 3.8,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 0
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 1
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 2
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 4
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 4
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 16
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 43
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 48
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 49
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 35
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 17
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 11
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 5
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 5
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 2
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 2
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 0
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 0
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 0
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 0
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 0
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 0
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 0
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 3
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 0
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 0
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 0
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 0
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 21,
+     "median_price": 326000.0,
+     "median_ppsf": 145.26
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 207,
+     "median_price": 406330.0,
+     "median_ppsf": 187.9
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 19,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 28,
+     "median_price": 422500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 21,
+     "median_price": 375000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 18,
+     "median_price": 367500.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 17,
+     "median_price": 390000.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 21,
+     "median_price": 422500.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 28,
+     "median_price": 348950.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 18,
+     "median_price": 354000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 19,
+     "median_price": 425000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 27,
+     "median_price": 420000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 31,
+     "median_price": 425000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 13,
+     "median_price": 403000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 5,
+     "median_price": null
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 13,
+     "years": 3,
+     "avg_sales": 4.3
+    },
+    {
+     "month": 2,
+     "sales": 14,
+     "years": 3,
+     "avg_sales": 4.7
+    },
+    {
+     "month": 3,
+     "sales": 13,
+     "years": 2,
+     "avg_sales": 6.5
+    },
+    {
+     "month": 4,
+     "sales": 16,
+     "years": 3,
+     "avg_sales": 5.3
+    },
+    {
+     "month": 5,
+     "sales": 32,
+     "years": 3,
+     "avg_sales": 10.7
+    },
+    {
+     "month": 6,
+     "sales": 28,
+     "years": 3,
+     "avg_sales": 9.3
+    },
+    {
+     "month": 7,
+     "sales": 29,
+     "years": 3,
+     "avg_sales": 9.7
+    },
+    {
+     "month": 8,
+     "sales": 28,
+     "years": 3,
+     "avg_sales": 9.3
+    },
+    {
+     "month": 9,
+     "sales": 23,
+     "years": 3,
+     "avg_sales": 7.7
+    },
+    {
+     "month": 10,
+     "sales": 25,
+     "years": 3,
+     "avg_sales": 8.3
+    },
+    {
+     "month": 11,
+     "sales": 13,
+     "years": 3,
+     "avg_sales": 4.3
+    },
+    {
+     "month": 12,
+     "sales": 11,
+     "years": 3,
+     "avg_sales": 3.7
+    }
+   ]
+  },
+  {
+   "id": "c:State College, PA",
+   "kind": "city",
+   "name": "State College, PA",
+   "campus": "The Pennsylvania State University",
+   "rows": 1351,
+   "sales": 1348,
+   "excluded_by_price": 3,
+   "median_price": 430000.0,
+   "p25_price": 350000.0,
+   "p75_price": 557125.0,
+   "mean_price": 474550.16,
+   "median_ppsf": 208.02,
+   "ppsf_sales": 1343,
+   "median_dom": 8.0,
+   "dom_sales": 908,
+   "no_list_date_share": 0.3168,
+   "price_change_12m": 0.0542,
+   "median_sqft": 2124.0,
+   "median_year_built": 1982.0,
+   "median_beds": 3.0,
+   "median_miles": 2.1,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 2
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 3
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 6
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 25
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 65
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 100
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 135
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 225
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 174
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 139
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 107
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 101
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 65
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 39
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 35
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 37
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 21
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 23
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 11
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 7
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 1
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 7
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 3
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 2
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 4
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 4
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 0
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 3
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 1
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 3
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 219,
+     "median_price": 430000.0,
+     "median_ppsf": 268.06
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 363,
+     "median_price": 422000.0,
+     "median_ppsf": 204.39
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 547,
+     "median_price": 450000.0,
+     "median_ppsf": 200.62
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 219,
+     "median_price": 390000.0,
+     "median_ppsf": 199.03
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 0,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 152,
+     "median_price": 426500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 137,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 88,
+     "median_price": 385000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 78,
+     "median_price": 427500.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 139,
+     "median_price": 439000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 120,
+     "median_price": 424000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 95,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 67,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 164,
+     "median_price": 451500.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 124,
+     "median_price": 470000.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 104,
+     "median_price": 414000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 66,
+     "median_price": 485000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 69,
+     "years": 3,
+     "avg_sales": 23.0
+    },
+    {
+     "month": 2,
+     "sales": 60,
+     "years": 3,
+     "avg_sales": 20.0
+    },
+    {
+     "month": 3,
+     "sales": 61,
+     "years": 2,
+     "avg_sales": 30.5
+    },
+    {
+     "month": 4,
+     "sales": 125,
+     "years": 3,
+     "avg_sales": 41.7
+    },
+    {
+     "month": 5,
+     "sales": 158,
+     "years": 3,
+     "avg_sales": 52.7
+    },
+    {
+     "month": 6,
+     "sales": 172,
+     "years": 3,
+     "avg_sales": 57.3
+    },
+    {
+     "month": 7,
+     "sales": 158,
+     "years": 3,
+     "avg_sales": 52.7
+    },
+    {
+     "month": 8,
+     "sales": 131,
+     "years": 3,
+     "avg_sales": 43.7
+    },
+    {
+     "month": 9,
+     "sales": 92,
+     "years": 3,
+     "avg_sales": 30.7
+    },
+    {
+     "month": 10,
+     "sales": 114,
+     "years": 3,
+     "avg_sales": 38.0
+    },
+    {
+     "month": 11,
+     "sales": 86,
+     "years": 3,
+     "avg_sales": 28.7
+    },
+    {
+     "month": 12,
+     "sales": 87,
+     "years": 3,
+     "avg_sales": 29.0
+    }
+   ]
+  },
+  {
+   "id": "c:Urbana, IL",
+   "kind": "city",
+   "name": "Urbana, IL",
+   "campus": "University of Illinois Urbana-Champaign",
+   "rows": 1131,
+   "sales": 1131,
+   "excluded_by_price": 0,
+   "median_price": 229900.0,
+   "p25_price": 150000.0,
+   "p75_price": 309500.0,
+   "mean_price": 246548.81,
+   "median_ppsf": 144.35,
+   "ppsf_sales": 1128,
+   "median_dom": 8.0,
+   "dom_sales": 872,
+   "no_list_date_share": 0.2202,
+   "price_change_12m": 0.0384,
+   "median_sqft": 1550.5,
+   "median_year_built": 1966.0,
+   "median_beds": 3.0,
+   "median_miles": 2.2,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 11
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 58
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 199
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 196
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 199
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 162
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 116
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 81
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 49
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 12
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 17
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 6
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 12
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 2
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 4
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 1
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 0
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 1
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 2
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 1
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 0
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 1
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 0
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 0
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 0
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 0
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 0
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 0
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 1
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 126,
+     "median_price": 317500.0,
+     "median_ppsf": 162.53
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 385,
+     "median_price": 160000.0,
+     "median_ppsf": 133.49
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 381,
+     "median_price": 222000.0,
+     "median_ppsf": 139.29
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 222,
+     "median_price": 308450.0,
+     "median_ppsf": 173.84
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 15,
+     "median_price": null,
+     "median_ppsf": null
+    },
+    {
+     "label": "8+ mi",
+     "sales": 2,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 114,
+     "median_price": 226500.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 119,
+     "median_price": 215000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 80,
+     "median_price": 220500.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 62,
+     "median_price": 182450.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 115,
+     "median_price": 240000.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 111,
+     "median_price": 225000.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 79,
+     "median_price": 225000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 63,
+     "median_price": 210000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 115,
+     "median_price": 260000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 106,
+     "median_price": 257500.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 88,
+     "median_price": 225000.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 71,
+     "median_price": 212000.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 53,
+     "years": 3,
+     "avg_sales": 17.7
+    },
+    {
+     "month": 2,
+     "sales": 69,
+     "years": 3,
+     "avg_sales": 23.0
+    },
+    {
+     "month": 3,
+     "sales": 51,
+     "years": 2,
+     "avg_sales": 25.5
+    },
+    {
+     "month": 4,
+     "sales": 100,
+     "years": 3,
+     "avg_sales": 33.3
+    },
+    {
+     "month": 5,
+     "sales": 99,
+     "years": 3,
+     "avg_sales": 33.0
+    },
+    {
+     "month": 6,
+     "sales": 145,
+     "years": 3,
+     "avg_sales": 48.3
+    },
+    {
+     "month": 7,
+     "sales": 134,
+     "years": 3,
+     "avg_sales": 44.7
+    },
+    {
+     "month": 8,
+     "sales": 131,
+     "years": 3,
+     "avg_sales": 43.7
+    },
+    {
+     "month": 9,
+     "sales": 71,
+     "years": 3,
+     "avg_sales": 23.7
+    },
+    {
+     "month": 10,
+     "sales": 87,
+     "years": 3,
+     "avg_sales": 29.0
+    },
+    {
+     "month": 11,
+     "sales": 81,
+     "years": 3,
+     "avg_sales": 27.0
+    },
+    {
+     "month": 12,
+     "sales": 79,
+     "years": 3,
+     "avg_sales": 26.3
+    }
+   ]
+  },
+  {
+   "id": "c:West Lafayette, IN",
+   "kind": "city",
+   "name": "West Lafayette, IN",
+   "campus": "Purdue University",
+   "rows": 1559,
+   "sales": 1559,
+   "excluded_by_price": 0,
+   "median_price": 379900.0,
+   "p25_price": 305900.0,
+   "p75_price": 475000.0,
+   "mean_price": 416652.09,
+   "median_ppsf": 178.28,
+   "ppsf_sales": 1559,
+   "median_dom": 11.0,
+   "dom_sales": 1293,
+   "no_list_date_share": 0.0853,
+   "price_change_12m": 0.0354,
+   "median_sqft": 2194.0,
+   "median_year_built": 2002.0,
+   "median_beds": 3.0,
+   "median_miles": 3.4,
+   "price_histogram": [
+    {
+     "low": 0,
+     "high": 50000,
+     "count": 2
+    },
+    {
+     "low": 50000,
+     "high": 100000,
+     "count": 1
+    },
+    {
+     "low": 100000,
+     "high": 150000,
+     "count": 6
+    },
+    {
+     "low": 150000,
+     "high": 200000,
+     "count": 9
+    },
+    {
+     "low": 200000,
+     "high": 250000,
+     "count": 79
+    },
+    {
+     "low": 250000,
+     "high": 300000,
+     "count": 230
+    },
+    {
+     "low": 300000,
+     "high": 350000,
+     "count": 301
+    },
+    {
+     "low": 350000,
+     "high": 400000,
+     "count": 260
+    },
+    {
+     "low": 400000,
+     "high": 450000,
+     "count": 204
+    },
+    {
+     "low": 450000,
+     "high": 500000,
+     "count": 120
+    },
+    {
+     "low": 500000,
+     "high": 550000,
+     "count": 93
+    },
+    {
+     "low": 550000,
+     "high": 600000,
+     "count": 62
+    },
+    {
+     "low": 600000,
+     "high": 650000,
+     "count": 56
+    },
+    {
+     "low": 650000,
+     "high": 700000,
+     "count": 50
+    },
+    {
+     "low": 700000,
+     "high": 750000,
+     "count": 27
+    },
+    {
+     "low": 750000,
+     "high": 800000,
+     "count": 23
+    },
+    {
+     "low": 800000,
+     "high": 850000,
+     "count": 10
+    },
+    {
+     "low": 850000,
+     "high": 900000,
+     "count": 6
+    },
+    {
+     "low": 900000,
+     "high": 950000,
+     "count": 4
+    },
+    {
+     "low": 950000,
+     "high": 1000000,
+     "count": 1
+    },
+    {
+     "low": 1000000,
+     "high": 1050000,
+     "count": 3
+    },
+    {
+     "low": 1050000,
+     "high": 1100000,
+     "count": 3
+    },
+    {
+     "low": 1100000,
+     "high": 1150000,
+     "count": 4
+    },
+    {
+     "low": 1150000,
+     "high": 1200000,
+     "count": 0
+    },
+    {
+     "low": 1200000,
+     "high": 1250000,
+     "count": 0
+    },
+    {
+     "low": 1250000,
+     "high": 1300000,
+     "count": 0
+    },
+    {
+     "low": 1300000,
+     "high": 1350000,
+     "count": 2
+    },
+    {
+     "low": 1350000,
+     "high": 1400000,
+     "count": 1
+    },
+    {
+     "low": 1400000,
+     "high": 1450000,
+     "count": 1
+    },
+    {
+     "low": 1450000,
+     "high": 1500000,
+     "count": 0
+    },
+    {
+     "low": 1500000,
+     "high": null,
+     "count": 1
+    }
+   ],
+   "distance_bands": [
+    {
+     "label": "Under 1 mi",
+     "sales": 102,
+     "median_price": 405500.0,
+     "median_ppsf": 192.34
+    },
+    {
+     "label": "1\u20132 mi",
+     "sales": 178,
+     "median_price": 351250.0,
+     "median_ppsf": 174.07
+    },
+    {
+     "label": "2\u20133 mi",
+     "sales": 334,
+     "median_price": 390000.0,
+     "median_ppsf": 172.61
+    },
+    {
+     "label": "3\u20135 mi",
+     "sales": 649,
+     "median_price": 369120.0,
+     "median_ppsf": 181.19
+    },
+    {
+     "label": "5\u20138 mi",
+     "sales": 281,
+     "median_price": 397016.0,
+     "median_ppsf": 176.26
+    },
+    {
+     "label": "8+ mi",
+     "sales": 15,
+     "median_price": null,
+     "median_ppsf": null
+    }
+   ],
+   "quarters": [
+    {
+     "quarter": "2023 Q2",
+     "sales": 170,
+     "median_price": 355000.0
+    },
+    {
+     "quarter": "2023 Q3",
+     "sales": 134,
+     "median_price": 377000.0
+    },
+    {
+     "quarter": "2023 Q4",
+     "sales": 94,
+     "median_price": 349000.0
+    },
+    {
+     "quarter": "2024 Q1",
+     "sales": 75,
+     "median_price": 339900.0
+    },
+    {
+     "quarter": "2024 Q2",
+     "sales": 150,
+     "median_price": 399250.0
+    },
+    {
+     "quarter": "2024 Q3",
+     "sales": 143,
+     "median_price": 379900.0
+    },
+    {
+     "quarter": "2024 Q4",
+     "sales": 141,
+     "median_price": 374000.0
+    },
+    {
+     "quarter": "2025 Q1",
+     "sales": 89,
+     "median_price": 415000.0
+    },
+    {
+     "quarter": "2025 Q2",
+     "sales": 185,
+     "median_price": 400000.0
+    },
+    {
+     "quarter": "2025 Q3",
+     "sales": 171,
+     "median_price": 389500.0
+    },
+    {
+     "quarter": "2025 Q4",
+     "sales": 107,
+     "median_price": 381025.0
+    },
+    {
+     "quarter": "2026 Q1",
+     "sales": 90,
+     "median_price": 398450.0
+    }
+   ],
+   "months": [
+    {
+     "month": 1,
+     "sales": 68,
+     "years": 3,
+     "avg_sales": 22.7
+    },
+    {
+     "month": 2,
+     "sales": 74,
+     "years": 3,
+     "avg_sales": 24.7
+    },
+    {
+     "month": 3,
+     "sales": 80,
+     "years": 2,
+     "avg_sales": 40.0
+    },
+    {
+     "month": 4,
+     "sales": 128,
+     "years": 3,
+     "avg_sales": 42.7
+    },
+    {
+     "month": 5,
+     "sales": 190,
+     "years": 3,
+     "avg_sales": 63.3
+    },
+    {
+     "month": 6,
+     "sales": 187,
+     "years": 3,
+     "avg_sales": 62.3
+    },
+    {
+     "month": 7,
+     "sales": 178,
+     "years": 3,
+     "avg_sales": 59.3
+    },
+    {
+     "month": 8,
+     "sales": 158,
+     "years": 3,
+     "avg_sales": 52.7
+    },
+    {
+     "month": 9,
+     "sales": 112,
+     "years": 3,
+     "avg_sales": 37.3
+    },
+    {
+     "month": 10,
+     "sales": 128,
+     "years": 3,
+     "avg_sales": 42.7
+    },
+    {
+     "month": 11,
+     "sales": 112,
+     "years": 3,
+     "avg_sales": 37.3
+    },
+    {
+     "month": 12,
+     "sales": 102,
+     "years": 3,
+     "avg_sales": 34.0
+    }
+   ]
+  }
+ ]
+}

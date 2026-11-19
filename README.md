@@ -1,51 +1,45 @@
-# [Your site's title]
-
-## Start here (delete this section before you submit)
-
-This repository is your starting point for the Home Sales case. It already holds the dataset, its description sheet, project instructions for your AI coding agent, and outlines of the README and agent log that the case asks for.
-
-1. **Turn on GitHub Pages.** In this repository, open **Settings**, then **Pages**. Under "Build and deployment," set **Source** to **GitHub Actions**. GitHub may suggest workflows to add. Skip them: this repository already has one, `.github/workflows/pages.yml`.
-2. **Publish for the first time.** Open the **Actions** tab, choose **Publish site to GitHub Pages** in the sidebar, click **Run workflow**, then click **Run workflow** again to confirm. If the tab already shows a failed run from when you created the repository, that's expected: Pages wasn't turned on yet. When the new run shows a green check, your site is at `https://your-username.github.io/your-repo-name/`. It shows a placeholder page until you replace `index.html`.
-
-    From then on, every push to the main branch publishes the site within a few minutes. If the live site doesn't show a change, open the **Actions** tab. A red X means the publish failed, and the run's log says why.
-3. **Open the repository in your AI coding agent.** Its project instructions are in `AGENTS.md`. If your agent reads its instructions from a file with a different name, check its documentation and copy `AGENTS.md` to that name. Add to the instructions as you learn what your agent needs.
-4. **Read `docs/data_description_sheet.md`** before you ask the agent for any analysis.
-5. **Build in small steps,** as the setup guide describes. Add an entry to `AGENT_LOG.md` each time you work with the agent.
-6. **Fill in every section below** before you submit.
-
-| Path | What it is |
-|---|---|
-| `index.html` | A placeholder page. Replace it with your site. |
-| `data/college_town_home_sales.csv` | The dataset, version 1.0: 35,442 rows. Your site reads this file. |
-| `data/college_town_home_sales.xlsx`, `.sqlite`, `.duckdb`, `.parquet` | The same data in Excel, SQLite, DuckDB and Parquet formats, with identical values |
-| `docs/data_description_sheet.md` | What every column means, and five problems in the data |
-| `AGENTS.md` | Project instructions for your AI coding agent |
-| `AGENT_LOG.md` | Your agent log |
-| `scripts/` | Scripts that make smaller data files for the site |
-| `.github/workflows/pages.yml` | Publishes the site to GitHub Pages each time you push to main. It publishes your files as they are. If you switch to a framework that needs a build step, have your agent update it. |
-
-Don't edit any of the five dataset files. Your site needs only the CSV file. The other formats make it easier to check numbers a second way, for example with a pivot table in Excel or a SQL query on the SQLite file. In SQLite and DuckDB, the table is named `home_sales`.
+# College-Town Home Sales Explorer
 
 ## What this site is for
 
-_Replace this line with your site's question and audience, or a short description of the site._
+An explorer for the College-town home sales dataset: 35,371 home sales near 11 university campuses, closed from March 2023 to March 2026. Pick a campus or one of the 18 cities and towns to see the median sale price, price per square foot, days on market, the 12-month change in median price, how price per square foot changes with distance from campus, quarterly prices, the spread of sale prices, and which months homes sell in. A sortable table compares every campus or city side by side.
+
+It is written for anyone weighing the housing market in a college town: students and staff thinking about buying, and anyone comparing Champaign-Urbana with other campus markets.
 
 ## Live site
 
-https://your-username.github.io/your-repo-name/
+https://aozdaryal.github.io/BDI475-Website-Project/
+
+Repository: https://github.com/aozdaryal/BDI475-Website-Project
 
 ## Data notes
 
-_Replace this line. Say which rows you left out and why, and how each figure on the site is defined. "Five things that will bite you" in the description sheet lists the problems to cover._
+- **Price rule.** Only sales from $10,000 to $5,000,000 are used. That leaves out 40 sales under $10,000 (one at $0) and 31 over $5,000,000 (up to $81,510,000), 71 of 35,442 rows. Every figure on the site uses the remaining 35,371 sales.
+- **Medians.** Every price, size and time is a median, because prices are skewed.
+- **Price per square foot** is sale price divided by `living_area_sqft`, only for homes with 300 sq ft or more recorded. 130 rows list less than that (127 list 0) and 376 list none.
+- **Days on market** is `contract_date - list_date`, not `sale_date - list_date`. It is computed only for sales with both dates (28,028 kept sales). Blank dates are never treated as zero, so the figure describes listed homes. The share of sales with no list date is shown per market in the comparison table.
+- **12-month price change** compares the median price of sales closed 2025-03-26 to 2026-03-25 with sales closed 2024-03-26 to 2025-03-25, and is shown only when both periods have at least 30 sales. It mixes changes in which homes sold with changes in prices, so it is not a repeat-sales index.
+- **Distance to campus** uses `miles_to_campus`, the straight-line distance to the nearest campus landmark. Distance bands with fewer than 20 sales are not shown.
+- **Quarterly prices** start in 2023 Q2 because sales begin on 2023-03-27. Quarters with fewer than 10 sales are not plotted. 2026 Q1 runs through 2026-03-25.
+- **Sales by month** average the complete months from April 2023 to February 2026: March over 2 years, every other month over 3.
+- **No deduplication.** `listing_id` is the key. Repeated street addresses are separate units, so no rows were removed.
+- **`home_type` is not used** because it is unreliable.
+
+### How to rebuild the data file
+
+The site reads `data/site_summary.json`, which `scripts/build_summary.py` computes from `data/college_town_home_sales.csv`. To rebuild it, run this from the repository root (needs Python 3 with pandas):
+
+```
+python scripts/build_summary.py
+```
 
 ## Tools we used
 
-_Replace this line with your AI coding agent or agents, and any libraries and other tools you used._
+- Claude (Anthropic) as the AI coding agent: wrote the data script and the site, and checked every figure against a separate SQLite calculation.
+- Python and pandas for the data script.
+- Plain HTML, CSS and JavaScript, with [Chart.js](https://www.chartjs.org/) 4.6.1 (MIT license) saved in `assets/vendor/`.
+- GitHub Pages for hosting.
 
 ## Citation
 
 College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.
-
-## Who did what
-
-_For teams: replace this line with each member's name and what they did. If you worked alone, delete this section._

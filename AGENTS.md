@@ -12,3 +12,8 @@ Rules:
 - After each change, tell me what you changed and how I can check it in my browser, on the live site or in the pull request. I don't install tools, run code or start a local server on my own computer, so don't ask me to.
 - Never put passwords, API keys or other secrets in any file.
 - .github/workflows/pages.yml publishes the repository's files to GitHub Pages, as they are, each time main is pushed. Only add a build step to it if we move to a framework that needs one.
+
+Current site:
+- index.html, assets/style.css and assets/app.js make up the site. Chart.js is saved in assets/vendor/.
+- The site reads data/site_summary.json, made by scripts/build_summary.py. After changing the script, rerun it and commit both files.
+- Rules used on every figure: sale price from $10,000 to $5,000,000; price per square foot only where living_area_sqft is 300 or more; days on market = contract_date - list_date, only when both dates exist. Keep these unless I ask to change them, and keep the "How the numbers are made" section in sync.
